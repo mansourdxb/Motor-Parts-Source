@@ -3,66 +3,58 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import engineMgmtImg from "@assets/denso-ems-cat.jpg";
+import emsImg from "@assets/denso-ems-cat.jpg";
+import camshaftImg from "@assets/denso-camshaft-sensor.jpg";
+import egrImg from "@assets/denso-egr-valve.jpg";
+import egtsImg from "@assets/denso-egts.jpg";
+import lambdaImg from "@assets/denso-lambda.jpg";
+import mapImg from "@assets/denso-map-sensor.jpg";
+import mafImg from "@assets/denso-maf-sensor.jpg";
 
-const engineManagementProducts = [
+const emsProducts = [
   {
     id: "1",
-    name: "Oxygen Sensors",
-    slug: "oxygen-sensors",
-    description: "Denso oxygen sensors for accurate air-fuel ratio monitoring and emissions control.",
-    count: 520,
+    name: "Camshaft and Crankshaft Sensors",
+    image: camshaftImg,
+    description: "Accurate camshaft and crankshaft position sensors for precise engine timing and performance.",
+    slug: "camshaft-crankshaft-sensors",
   },
   {
     id: "2",
-    name: "Mass Air Flow Sensors",
-    slug: "maf-sensors",
-    description: "Precision MAF sensors for optimal engine performance and fuel efficiency.",
-    count: 340,
+    name: "Exhaust Gas Recirculation Valves",
+    image: egrImg,
+    description: "EGR valves for emissions reduction and improved fuel efficiency.",
+    slug: "egr-valves",
   },
   {
     id: "3",
-    name: "Camshaft Position Sensors",
-    slug: "camshaft-sensors",
-    description: "Accurate camshaft position sensors for precise engine timing.",
-    count: 280,
+    name: "Exhaust Gas Temperature Sensors",
+    image: egtsImg,
+    description: "EGTS sensors for monitoring exhaust temperatures and protecting catalytic converters.",
+    slug: "egts-sensors",
   },
   {
     id: "4",
-    name: "Crankshaft Position Sensors",
-    slug: "crankshaft-sensors",
-    description: "High-quality crankshaft sensors for engine speed and position detection.",
-    count: 310,
+    name: "Lambda Sensors",
+    image: lambdaImg,
+    description: "Oxygen sensors for accurate air-fuel ratio monitoring and emissions control.",
+    slug: "lambda-sensors",
   },
   {
     id: "5",
-    name: "Throttle Position Sensors",
-    slug: "throttle-sensors",
-    description: "Reliable throttle position sensors for accurate throttle response.",
-    count: 195,
+    name: "MAP Sensors",
+    image: mapImg,
+    description: "Manifold absolute pressure sensors for optimal engine load detection.",
+    slug: "map-sensors",
   },
   {
     id: "6",
-    name: "Coolant Temperature Sensors",
-    slug: "coolant-sensors",
-    description: "Engine coolant temperature sensors for optimal engine management.",
-    count: 165,
-  },
-  {
-    id: "7",
-    name: "Knock Sensors",
-    slug: "knock-sensors",
-    description: "Denso knock sensors for engine detonation detection and protection.",
-    count: 140,
-  },
-  {
-    id: "8",
-    name: "EGR Valves",
-    slug: "egr-valves",
-    description: "Exhaust gas recirculation valves for emissions reduction.",
-    count: 180,
+    name: "Mass Air Flow Sensors",
+    image: mafImg,
+    description: "Precision MAF sensors for optimal engine performance and fuel efficiency.",
+    slug: "maf-sensors",
   },
 ];
 
@@ -71,16 +63,15 @@ export default function EngineManagementPage() {
     <div className="min-h-screen flex flex-col" data-testid="page-engine-management">
       <SEO 
         title="Engine Management Systems | MPS"
-        description="Denso engine management sensors and components including oxygen sensors, MAF sensors, position sensors, and EGR valves for all vehicle makes."
-        keywords="engine management, oxygen sensors, MAF sensors, camshaft sensors, crankshaft sensors, Denso sensors, UAE"
+        description="Denso engine management sensors and components including lambda sensors, MAF sensors, position sensors, and EGR valves for all vehicle makes."
+        keywords="engine management, lambda sensors, MAF sensors, camshaft sensors, crankshaft sensors, Denso sensors, UAE"
       />
       <Header />
       <main className="flex-1">
-        <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-12 lg:py-20">
+        <section className="bg-primary text-primary-foreground py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <Link href="/categories">
-              <Button variant="outline" className="mb-6 gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
-                <ArrowLeft className="h-4 w-4" />
+              <Button variant="outline" size="sm" className="mb-6 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
                 All Categories
               </Button>
             </Link>
@@ -89,25 +80,25 @@ export default function EngineManagementPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">
                   Engine Management Systems
                 </h1>
-                <p className="text-lg text-primary-foreground/90 mb-6">
-                  Complete range of Denso engine management sensors and components. From oxygen sensors to EGR valves, we supply precision parts for optimal engine performance.
+                <p className="text-primary-foreground/90 mb-6 max-w-lg">
+                  Complete range of Denso engine management sensors and components. From lambda sensors to EGR valves, we supply precision parts for optimal engine performance.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <Link href="/contact">
-                    <Button size="lg" variant="secondary">Request Quote</Button>
+                    <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">Request Quote</Button>
                   </Link>
                   <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/20">
+                    <Button className="bg-white text-primary hover:bg-white/90">
                       WhatsApp Us
                     </Button>
                   </a>
                 </div>
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:flex justify-end">
                 <img 
-                  src={engineMgmtImg} 
+                  src={emsImg} 
                   alt="Engine Management Systems"
-                  className="rounded-lg shadow-xl"
+                  className="max-w-md rounded-lg"
                 />
               </div>
             </div>
@@ -117,23 +108,25 @@ export default function EngineManagementPage() {
         <section className="py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <h2 className="text-2xl lg:text-3xl font-bold mb-8">
-              Engine Management Products
+              Engine Management Systems Products
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {engineManagementProducts.map((product) => (
-                <Card key={product.id} className="overflow-visible hover-elevate" data-testid={`card-engine-${product.id}`}>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {emsProducts.map((product) => (
+                <Card key={product.id} className="overflow-visible hover-elevate" data-testid={`card-ems-${product.id}`}>
+                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-4">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="max-h-full object-contain"
+                    />
+                  </div>
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="font-bold">{product.name}</h3>
-                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-                        {product.count}+
-                      </span>
-                    </div>
+                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
                     <Link href="/contact">
-                      <Button className="w-full gap-2" data-testid={`button-engine-${product.id}`}>
+                      <Button className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90" data-testid={`button-ems-${product.id}`}>
                         Get Quote
                         <ArrowRight className="h-4 w-4" />
                       </Button>
@@ -141,6 +134,21 @@ export default function EngineManagementPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">General information</h2>
+              <div className="prose prose-sm max-w-none text-muted-foreground">
+                <p className="mb-4">
+                  To ensure a vehicle performs reliably, it's essential that its engine management system (EMS) is engineered to a high degree of accuracy. To guarantee this superior level of performance, DENSO has been working for many years to advance the design of our EMS products and develop innovative technologies that lead the market in terms of fuel efficiency, lower emissions and high engine output.
+                </p>
+                <p className="mb-4">
+                  Our pioneering EMS technologies include the Exhaust Gas Recirculation (EGR) Valves, plug-in Mass Air Flow meters and adding quantitative measurements to Lambda Sensors, all of which were firsts in the world market designed to improve vehicle efficiency. Integrating an EGR valve with an air intake throttle valve improved the emissions performance of diesel engines in a more compact design.
+                </p>
+                <p>
+                  By combining our many years of experience in the global car market, our precision engineering, advanced design and the highest OE quality, we've developed a pioneering EMS range that is now available to the aftermarket.
+                </p>
+              </div>
             </div>
           </div>
         </section>

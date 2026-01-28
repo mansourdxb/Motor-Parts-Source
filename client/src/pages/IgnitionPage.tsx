@@ -3,52 +3,50 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import ignitionImg from "@assets/denso-ignition-cat.jpg";
+import sparkPlugImg from "@assets/denso-spark-plug.jpg";
+import ignitionCoilImg from "@assets/denso-ignition-coil.jpg";
+import glowPlugImg from "@assets/denso-glow-plug.jpg";
+import fuelPumpImg from "@assets/denso-fuel-pump.jpg";
+import cogenImg from "@assets/denso-cogen-spark.jpg";
 
 const ignitionProducts = [
   {
     id: "1",
     name: "Spark Plugs",
-    slug: "spark-plugs",
+    image: sparkPlugImg,
     description: "Denso iridium and platinum spark plugs for reliable ignition and fuel efficiency.",
-    count: 850,
+    slug: "spark-plugs",
   },
   {
     id: "2",
     name: "Ignition Coils",
-    slug: "ignition-coils",
+    image: ignitionCoilImg,
     description: "High-performance ignition coils for consistent spark delivery.",
-    count: 620,
+    slug: "ignition-coils",
   },
   {
     id: "3",
     name: "Glow Plugs",
-    slug: "glow-plugs",
+    image: glowPlugImg,
     description: "Denso glow plugs for quick diesel engine cold starts.",
-    count: 380,
+    slug: "glow-plugs",
   },
   {
     id: "4",
-    name: "Ignition Leads",
-    slug: "ignition-leads",
-    description: "Premium ignition lead sets for efficient spark plug wire connections.",
-    count: 290,
+    name: "Fuel Pumps",
+    image: fuelPumpImg,
+    description: "Reliable fuel pumps for consistent fuel delivery to the engine.",
+    slug: "fuel-pumps",
   },
   {
     id: "5",
-    name: "Ignition Modules",
-    slug: "ignition-modules",
-    description: "Electronic ignition control modules for precise timing control.",
-    count: 165,
-  },
-  {
-    id: "6",
-    name: "Distributor Caps & Rotors",
-    slug: "distributor-parts",
-    description: "Quality distributor caps and rotors for older ignition systems.",
-    count: 145,
+    name: "Co-Generation Spark Plugs",
+    image: cogenImg,
+    description: "Specialized spark plugs for co-generation and industrial applications.",
+    slug: "co-gen-spark-plugs",
   },
 ];
 
@@ -57,16 +55,15 @@ export default function IgnitionPage() {
     <div className="min-h-screen flex flex-col" data-testid="page-ignition">
       <SEO 
         title="Ignition Products | MPS"
-        description="Complete range of Denso ignition components including spark plugs, ignition coils, glow plugs, and ignition leads for all vehicle makes."
-        keywords="spark plugs, ignition coils, glow plugs, ignition leads, Denso ignition, automotive ignition, UAE"
+        description="Complete range of Denso ignition components including spark plugs, ignition coils, glow plugs, and fuel pumps for all vehicle makes."
+        keywords="spark plugs, ignition coils, glow plugs, fuel pumps, Denso ignition, automotive ignition, UAE"
       />
       <Header />
       <main className="flex-1">
-        <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-12 lg:py-20">
+        <section className="bg-primary text-primary-foreground py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <Link href="/categories">
-              <Button variant="outline" className="mb-6 gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
-                <ArrowLeft className="h-4 w-4" />
+              <Button variant="outline" size="sm" className="mb-6 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
                 All Categories
               </Button>
             </Link>
@@ -75,25 +72,25 @@ export default function IgnitionPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">
                   Ignition
                 </h1>
-                <p className="text-lg text-primary-foreground/90 mb-6">
+                <p className="text-primary-foreground/90 mb-6 max-w-lg">
                   Premium Denso ignition components for reliable engine starting and performance. From spark plugs to ignition coils, we supply quality parts for all petrol and diesel engines.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <Link href="/contact">
-                    <Button size="lg" variant="secondary">Request Quote</Button>
+                    <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">Request Quote</Button>
                   </Link>
                   <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/20">
+                    <Button className="bg-white text-primary hover:bg-white/90">
                       WhatsApp Us
                     </Button>
                   </a>
                 </div>
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:flex justify-end">
                 <img 
                   src={ignitionImg} 
                   alt="Ignition Products"
-                  className="rounded-lg shadow-xl"
+                  className="max-w-md rounded-lg"
                 />
               </div>
             </div>
@@ -108,18 +105,20 @@ export default function IgnitionPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {ignitionProducts.map((product) => (
                 <Card key={product.id} className="overflow-visible hover-elevate" data-testid={`card-ignition-${product.id}`}>
+                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-4">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="max-h-full object-contain"
+                    />
+                  </div>
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="font-bold text-lg">{product.name}</h3>
-                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-                        {product.count}+ SKUs
-                      </span>
-                    </div>
+                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
                     <Link href="/contact">
-                      <Button className="w-full gap-2" data-testid={`button-ignition-${product.id}`}>
+                      <Button className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90" data-testid={`button-ignition-${product.id}`}>
                         Get Quote
                         <ArrowRight className="h-4 w-4" />
                       </Button>
@@ -127,6 +126,21 @@ export default function IgnitionPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">General information</h2>
+              <div className="prose prose-sm max-w-none text-muted-foreground">
+                <p className="mb-4">
+                  Key to starting your car reliably and efficiently, successful ignition is also essential to ensure the high performance of your vehicle. From fuel efficiency to reducing carbon emissions, choosing ignition products that provide a consistent power output will help your engine to perform well on every journey.
+                </p>
+                <p className="mb-4">
+                  By developing and manufacturing world-leading ignition technologies, DENSO has become a trusted name for a variety of original equipment (OE) products, including ignition coils, spark plugs and glow plugs. We're continuously developing innovations such as our patented Twin Tip (TT) design to ensure our spark plugs provide high performance in petrol engines, whatever the car or driving style.
+                </p>
+                <p>
+                  With innovative technologies and longer lifetimes in products that suit any budget, our aftermarket ignition range is relied upon by worldwide car manufacturers to provide optimum engine performance in both petrol and diesel vehicles.
+                </p>
+              </div>
             </div>
           </div>
         </section>

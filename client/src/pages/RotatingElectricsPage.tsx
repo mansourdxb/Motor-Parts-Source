@@ -3,52 +3,26 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "wouter";
 import rotatingImg from "@assets/denso-rotating-cat.jpg";
+import alternatorImg from "@assets/denso-alternator.jpg";
+import starterImg from "@assets/denso-starter.jpg";
 
 const rotatingProducts = [
   {
     id: "1",
     name: "Alternators",
-    slug: "alternators",
+    image: alternatorImg,
     description: "Denso alternators for reliable electrical power generation and battery charging.",
-    count: 580,
+    slug: "alternators",
   },
   {
     id: "2",
-    name: "Starter Motors",
-    slug: "starter-motors",
+    name: "Starters",
+    image: starterImg,
     description: "High-torque starter motors for dependable engine cranking.",
-    count: 490,
-  },
-  {
-    id: "3",
-    name: "Alternator Regulators",
-    slug: "alternator-regulators",
-    description: "Voltage regulators for consistent alternator output control.",
-    count: 185,
-  },
-  {
-    id: "4",
-    name: "Starter Solenoids",
-    slug: "starter-solenoids",
-    description: "Starter solenoids for reliable starter motor engagement.",
-    count: 145,
-  },
-  {
-    id: "5",
-    name: "Alternator Pulleys",
-    slug: "alternator-pulleys",
-    description: "OE-quality alternator pulleys including overrunning alternator pulleys.",
-    count: 220,
-  },
-  {
-    id: "6",
-    name: "Carbon Brushes",
-    slug: "carbon-brushes",
-    description: "Replacement carbon brushes for alternators and starter motors.",
-    count: 165,
+    slug: "starters",
   },
 ];
 
@@ -57,16 +31,15 @@ export default function RotatingElectricsPage() {
     <div className="min-h-screen flex flex-col" data-testid="page-rotating-electrics">
       <SEO 
         title="Rotating Electrics | MPS"
-        description="Premium Denso rotating electrical components including alternators, starter motors, and related parts for all vehicle applications."
+        description="Premium Denso rotating electrical components including alternators and starter motors for all vehicle applications."
         keywords="alternators, starter motors, rotating electrics, Denso alternators, automotive electrical, UAE"
       />
       <Header />
       <main className="flex-1">
-        <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-12 lg:py-20">
+        <section className="bg-primary text-primary-foreground py-12 lg:py-16">
           <div className="container mx-auto px-4">
             <Link href="/categories">
-              <Button variant="outline" className="mb-6 gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
-                <ArrowLeft className="h-4 w-4" />
+              <Button variant="outline" size="sm" className="mb-6 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
                 All Categories
               </Button>
             </Link>
@@ -75,25 +48,25 @@ export default function RotatingElectricsPage() {
                 <h1 className="text-4xl lg:text-5xl font-bold mb-4">
                   Rotating Electrics
                 </h1>
-                <p className="text-lg text-primary-foreground/90 mb-6">
+                <p className="text-primary-foreground/90 mb-6 max-w-lg">
                   Premium Denso rotating electrical components for reliable power generation and engine starting. From alternators to starter motors, we supply quality parts for all vehicles.
                 </p>
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <Link href="/contact">
-                    <Button size="lg" variant="secondary">Request Quote</Button>
+                    <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">Request Quote</Button>
                   </Link>
                   <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
-                    <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/20">
+                    <Button className="bg-white text-primary hover:bg-white/90">
                       WhatsApp Us
                     </Button>
                   </a>
                 </div>
               </div>
-              <div className="hidden lg:block">
+              <div className="hidden lg:flex justify-end">
                 <img 
                   src={rotatingImg} 
                   alt="Rotating Electrics"
-                  className="rounded-lg shadow-xl"
+                  className="max-w-md rounded-lg"
                 />
               </div>
             </div>
@@ -108,18 +81,20 @@ export default function RotatingElectricsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {rotatingProducts.map((product) => (
                 <Card key={product.id} className="overflow-visible hover-elevate" data-testid={`card-rotating-${product.id}`}>
+                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-4">
+                    <img 
+                      src={product.image} 
+                      alt={product.name}
+                      className="max-h-full object-contain"
+                    />
+                  </div>
                   <div className="p-6">
-                    <div className="flex items-center justify-between mb-3">
-                      <h3 className="font-bold text-lg">{product.name}</h3>
-                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded">
-                        {product.count}+ SKUs
-                      </span>
-                    </div>
+                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
                     <Link href="/contact">
-                      <Button className="w-full gap-2" data-testid={`button-rotating-${product.id}`}>
+                      <Button className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90" data-testid={`button-rotating-${product.id}`}>
                         Get Quote
                         <ArrowRight className="h-4 w-4" />
                       </Button>
@@ -127,6 +102,18 @@ export default function RotatingElectricsPage() {
                   </div>
                 </Card>
               ))}
+            </div>
+
+            <div className="mt-16">
+              <h2 className="text-2xl font-bold mb-6">General information</h2>
+              <div className="prose prose-sm max-w-none text-muted-foreground">
+                <p className="mb-4">
+                  Our unwavering focus on delivering outstanding quality, advanced design and innovative technologies to the global car market has led our rotating electric products to set the OE standard across Europe. By working closely with carmakers such as Toyota, Fiat and Land Rover, we've developed starters and alternators that offer exemplary performance and are the product of choice for a huge range of OE manufacturers.
+                </p>
+                <p>
+                  Subject to rigorous manufacturing and testing processes, our starters and alternators guarantee high levels of performance and fit a large range of car models. As well as meeting DENSO's strict quality standards, our rotating electric products use completely new parts. This means our starters and alternators can be relied on to facilitate high, reliable performance journey after journey.
+                </p>
+              </div>
             </div>
           </div>
         </section>
