@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 import engineParts from "@assets/image_1769588682016.png";
 import brakeParts from "@assets/brake-parts.jpg";
 import suspensionParts from "@assets/suspension-parts.jpg";
-import electricalParts from "@assets/electrical-parts.jpg";
+import airFilters from "@assets/image_1769589414485.png";
 import transmissionParts from "@assets/transmission-parts.jpg";
 import heroBg from "@assets/hero-bg.jpg";
 import sparkPlugs from "@assets/image_1769588542997.png";
@@ -51,9 +51,9 @@ const categories = [
   },
   {
     id: "6",
-    name: "Electrical",
-    image: electricalParts,
-    description: "Batteries, alternators, starters, ignition coils, and electrical accessories.",
+    name: "Air Filters",
+    image: airFilters,
+    description: "Denso Cool Gear air filters, cabin filters, and engine air filters for all vehicles.",
     count: 1100,
   },
   {
