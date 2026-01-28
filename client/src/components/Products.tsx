@@ -59,10 +59,6 @@ const featuredProducts: Product[] = [
 ];
 
 function ProductCard({ product }: { product: Product }) {
-  const discount = product.originalPrice 
-    ? Math.round((1 - product.price / product.originalPrice) * 100)
-    : null;
-
   return (
     <Card className="group overflow-visible hover-elevate" data-testid={`card-product-${product.id}`}>
       <div className="relative aspect-square overflow-hidden rounded-t-md bg-muted">
@@ -71,11 +67,6 @@ function ProductCard({ product }: { product: Product }) {
           alt={product.name}
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {discount && (
-          <Badge className="absolute top-3 left-3 bg-accent text-accent-foreground">
-            -{discount}%
-          </Badge>
-        )}
         <Badge 
           variant="secondary" 
           className="absolute top-3 right-3"
@@ -90,17 +81,6 @@ function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <p className="text-xs text-muted-foreground mt-1">{product.partNumber}</p>
-        
-        <div className="flex items-center justify-between gap-2 mt-4">
-          <div className="flex items-baseline gap-2 flex-wrap">
-            <span className="text-lg font-bold text-primary">AED {product.price}</span>
-            {product.originalPrice && (
-              <span className="text-sm text-muted-foreground line-through">
-                AED {product.originalPrice}
-              </span>
-            )}
-          </div>
-        </div>
         
         <Button 
           className="w-full mt-3 gap-2" 
