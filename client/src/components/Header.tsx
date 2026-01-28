@@ -9,13 +9,14 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location] = useLocation();
 
-  const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/products", label: "Products" },
-    { href: "/categories", label: "Categories" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
-  ];
+ const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/categories", label: "Products" }, // changed
+  { href: "/categories", label: "Categories" },
+  { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
+];
+
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 border-b">
