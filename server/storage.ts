@@ -1,6 +1,7 @@
 import { type User, type InsertUser, type Product, type Category, type ContactFormData, contactSubmissions } from "@shared/schema";
 import { randomUUID } from "crypto";
 import { db } from "./db";
+import { sendContactEmail } from "./email";
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
@@ -196,6 +197,10 @@ export class MemStorage implements IStorage {
     }).returning({ id: contactSubmissions.id, submittedAt: contactSubmissions.submittedAt });
     
     console.log("Contact form saved to database:", { id: result.id, ...data, submittedAt: result.submittedAt });
+    
+    // Send email notification
+    await sendContactEmail(data);
+    
     return { id: result.id, submittedAt: result.submittedAt };
   }
 }
