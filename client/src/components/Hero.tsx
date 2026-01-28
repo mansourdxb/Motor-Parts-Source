@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ShieldCheck, Truck, Clock } from "lucide-react";
 import heroBg from "@assets/hero-bg.jpg";
@@ -28,18 +29,22 @@ export function Hero() {
           </p>
           
           <div className="flex flex-wrap gap-4 mb-12">
-            <Button size="lg" className="bg-accent border-accent-border" data-testid="button-browse-parts">
-              Browse Parts
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
-              className="bg-white/10 backdrop-blur-sm border-white/30 text-white"
-              data-testid="button-get-quote-hero"
-            >
-              Request Quote
-            </Button>
+            <Link href="/categories">
+              <Button size="lg" className="bg-accent border-accent-border" data-testid="button-browse-parts">
+                Browse Parts
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="bg-white/10 backdrop-blur-sm border-white/30 text-white"
+                data-testid="button-get-quote-hero"
+              >
+                Request Quote
+              </Button>
+            </Link>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">

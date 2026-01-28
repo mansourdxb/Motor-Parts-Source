@@ -69,12 +69,16 @@ export function Header() {
           </nav>
 
           <div className="hidden lg:flex items-center gap-3">
-            <Button variant="outline" data-testid="button-get-quote">
-              Get Quote
-            </Button>
-            <Button data-testid="button-shop-now">
-              Shop Now
-            </Button>
+            <Link href="/contact">
+              <Button variant="outline" data-testid="button-get-quote">
+                Get Quote
+              </Button>
+            </Link>
+            <Link href="/categories">
+              <Button data-testid="button-shop-now">
+                Shop Now
+              </Button>
+            </Link>
           </div>
 
           <Button 
@@ -103,12 +107,16 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 mt-3 pt-3 border-t">
-              <Button variant="outline" className="w-full" data-testid="button-mobile-get-quote">
-                Get Quote
-              </Button>
-              <Button className="w-full" data-testid="button-mobile-shop-now">
-                Shop Now
-              </Button>
+              <Link href="/contact">
+                <Button variant="outline" className="w-full" data-testid="button-mobile-get-quote" onClick={() => setMobileMenuOpen(false)}>
+                  Get Quote
+                </Button>
+              </Link>
+              <Link href="/categories">
+                <Button className="w-full" data-testid="button-mobile-shop-now" onClick={() => setMobileMenuOpen(false)}>
+                  Shop Now
+                </Button>
+              </Link>
             </div>
           </nav>
         )}
