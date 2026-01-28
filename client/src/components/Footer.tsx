@@ -87,37 +87,37 @@ export function Footer() {
             <h4 className="font-semibold text-lg mb-4">Categories</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="/diesel-components" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-diesel">
+                <Link href="/categories/diesel-components" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-diesel">
                   Diesel Components
                 </Link>
               </li>
               <li>
-                <Link href="/ignition" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-ignition">
+                <Link href="/categories/ignition" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-ignition">
                   Ignition
                 </Link>
               </li>
               <li>
-                <Link href="/rotating-electrics" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-rotating">
+                <Link href="/categories/rotating-electrics" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-rotating">
                   Rotating Electrics
                 </Link>
               </li>
               <li>
-                <Link href="/wiper-blades" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-wipers">
+                <Link href="/categories/wiper-blades" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-wipers">
                   Wiper Blades
                 </Link>
               </li>
               <li>
-                <Link href="/filtration" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-filtration">
+                <Link href="/categories/filtration" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-filtration">
                   Filtration
                 </Link>
               </li>
               <li>
-                <Link href="/engine-management" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-engine-management">
+                <Link href="/categories/engine-management" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-engine-management">
                   Engine Management
                 </Link>
               </li>
               <li>
-                <Link href="/ac-engine-cooling" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-ac-cooling">
+                <Link href="/categories/ac-engine-cooling" className="text-background/70 hover:text-background transition-colors" data-testid="link-footer-ac-cooling">
                   AC & Engine Cooling
                 </Link>
               </li>
