@@ -92,11 +92,11 @@ export default function IgnitionPage() {
                   className="group overflow-visible hover-elevate"
                   data-testid={`card-ignition-${product.id}`}
                 >
-                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-6">
+                  <div className="aspect-video overflow-hidden rounded-t-md">
                     <img 
                       src={product.image} 
                       alt={product.name}
-                      className="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-6">
