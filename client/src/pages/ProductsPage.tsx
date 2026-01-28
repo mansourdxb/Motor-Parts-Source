@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { ArrowRight, Search, Filter } from "lucide-react";
 import type { Product } from "@shared/schema";
-import engineParts from "@assets/engine-parts.jpg";
+import engineParts from "@assets/image_1769588682016.png";
 import brakeParts from "@assets/brake-parts.jpg";
 import suspensionParts from "@assets/suspension-parts.jpg";
 import electricalParts from "@assets/electrical-parts.jpg";

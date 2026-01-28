@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import engineParts from "@assets/engine-parts.jpg";
+import engineParts from "@assets/image_1769588682016.png";
 import brakeParts from "@assets/brake-parts.jpg";
 import suspensionParts from "@assets/suspension-parts.jpg";
 import electricalParts from "@assets/electrical-parts.jpg";
