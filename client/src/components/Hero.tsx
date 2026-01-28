@@ -19,8 +19,7 @@ export function Hero() {
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-testid="text-hero-title">
-            Your Wholesale Partner for
-            <span className="block text-orange-300">Premium Motor Parts</span>
+            Your Wholesale Partner for <span className="text-orange-300">Premium Motor Parts</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl" data-testid="text-hero-description">
