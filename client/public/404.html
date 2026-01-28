@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Redirecting…</title>
     <script type="text/javascript">
-      // Single Page Apps for GitHub Pages:
-      // Redirect 404s to index.html and preserve the route in a query param.
+      // Single Page Apps for GitHub Pages (project pages):
+      // Redirect 404s to /<repo>/index.html and preserve the route in a query param.
       (function () {
         var l = window.location;
         var path = l.pathname + l.search;
@@ -14,7 +14,7 @@
           l.protocol +
           "//" +
           l.host +
-          "/?p=" +
+          "/Motor-Parts-Source/?p=" +
           encodeURIComponent(path).replace(/%26/g, "~and~") +
           l.hash;
         l.replace(redirectUrl);
