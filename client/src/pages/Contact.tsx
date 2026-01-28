@@ -222,7 +222,7 @@ export default function Contact() {
                     <li className="flex items-center gap-3">
                       <Clock className="h-5 w-5 shrink-0 text-primary" />
                       <span className="text-muted-foreground text-sm">
-                        Sat - Thu: 8:00 AM - 6:00 PM
+                        Mon - Fri: 8:00 AM - 6:00 PM
                       </span>
                     </li>
                   </ul>
@@ -247,11 +247,11 @@ export default function Contact() {
                   <h3 className="font-semibold text-lg mb-3">Business Hours</h3>
                   <ul className="space-y-2 text-sm">
                     <li className="flex justify-between gap-4">
-                      <span className="text-muted-foreground">Saturday - Thursday</span>
+                      <span className="text-muted-foreground">Monday - Friday</span>
                       <span className="font-medium">8:00 AM - 6:00 PM</span>
                     </li>
                     <li className="flex justify-between gap-4">
-                      <span className="text-muted-foreground">Friday</span>
+                      <span className="text-muted-foreground">Saturday - Sunday</span>
                       <span className="font-medium text-destructive">Closed</span>
                     </li>
                   </ul>
