@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { SiWhatsapp, SiFacebook, SiInstagram, SiLinkedin } from "react-icons/si";
-import logoImage from "@assets/MPS_Logo-02_1769586620513.jpg";
+import logoImage from "@assets/MPS_Logo-02_(1)_1769586620512.png";
 
 export function Footer() {
   return (
@@ -151,7 +151,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-wrap justify-between items-center gap-4 text-sm text-background/60">
             <p data-testid="text-copyright">
-              © 2024 Motor Parts Source L.L.C. All rights reserved.
+              © 2026 Motor Parts Source L.L.C. All rights reserved.
             </p>
             <div className="flex gap-6 flex-wrap">
               <a href="#" className="hover:text-background transition-colors" data-testid="link-privacy">
