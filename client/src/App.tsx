@@ -12,6 +12,12 @@ import ProductsPage from "@/pages/ProductsPage";
 import CategoriesPage from "@/pages/CategoriesPage";
 import ACEngineCoolingPage from "@/pages/ACEngineCoolingPage";
 import ACProductDetailPage from "@/pages/ACProductDetailPage";
+import DieselComponentsPage from "@/pages/DieselComponentsPage";
+import EngineManagementPage from "@/pages/EngineManagementPage";
+import FiltrationPage from "@/pages/FiltrationPage";
+import IgnitionPage from "@/pages/IgnitionPage";
+import RotatingElectricsPage from "@/pages/RotatingElectricsPage";
+import WiperBladesPage from "@/pages/WiperBladesPage";
 
 function Router() {
   return (
@@ -23,6 +29,12 @@ function Router() {
       <Route path="/categories" component={CategoriesPage} />
       <Route path="/categories/ac-engine-cooling" component={ACEngineCoolingPage} />
       <Route path="/categories/ac-engine-cooling/:slug" component={ACProductDetailPage} />
+      <Route path="/categories/diesel-components" component={DieselComponentsPage} />
+      <Route path="/categories/engine-management" component={EngineManagementPage} />
+      <Route path="/categories/filtration" component={FiltrationPage} />
+      <Route path="/categories/ignition" component={IgnitionPage} />
+      <Route path="/categories/rotating-electrics" component={RotatingElectricsPage} />
+      <Route path="/categories/wiper-blades" component={WiperBladesPage} />
       <Route component={NotFound} />
     </Switch>
   );
