@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -132,10 +133,12 @@ export function Products() {
               Hot Picks This Week
             </h2>
           </div>
-          <Button variant="outline" className="gap-2" data-testid="button-view-all-products">
-            View All Products
-            <ArrowRight className="h-4 w-4" />
-          </Button>
+          <Link href="/products">
+            <Button variant="outline" className="gap-2" data-testid="button-view-all-products">
+              View All Products
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">

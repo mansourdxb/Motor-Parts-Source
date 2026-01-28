@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -53,10 +54,12 @@ export function Categories() {
               Browse our extensive collection of auto parts organized by category for easy navigation.
             </p>
           </div>
-          <Button variant="outline" className="gap-2" data-testid="button-view-all-categories">
-            View All Categories
-            <ArrowRight className="h-4 w-4" />
-          </Button>
+          <Link href="/categories">
+            <Button variant="outline" className="gap-2" data-testid="button-view-all-categories">
+              View All Categories
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
