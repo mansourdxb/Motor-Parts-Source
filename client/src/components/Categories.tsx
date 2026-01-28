@@ -11,33 +11,33 @@ import transmissionParts from "@assets/transmission-parts.jpg";
 const categories = [
   {
     id: "1",
+    name: "Spark Plugs",
+    image: electricalParts,
+    description: "Toyota, Denso & NGK spark plugs",
+  },
+  {
+    id: "2",
+    name: "Injectors",
+    image: engineParts,
+    description: "Toyota & Denso fuel injectors",
+  },
+  {
+    id: "3",
     name: "Engine Parts",
     image: engineParts,
     description: "Pistons, gaskets, timing belts, and more",
   },
   {
-    id: "2",
+    id: "4",
     name: "Brake Systems",
     image: brakeParts,
     description: "Brake pads, discs, calipers, and rotors",
   },
   {
-    id: "3",
-    name: "Suspension",
-    image: suspensionParts,
-    description: "Shock absorbers, struts, and control arms",
-  },
-  {
-    id: "4",
+    id: "5",
     name: "Electrical",
     image: electricalParts,
     description: "Batteries, alternators, and starters",
-  },
-  {
-    id: "5",
-    name: "Transmission",
-    image: transmissionParts,
-    description: "Clutches, gearboxes, and CV joints",
   },
 ];
 
