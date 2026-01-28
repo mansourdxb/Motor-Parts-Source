@@ -7,18 +7,20 @@ import brakeParts from "@assets/brake-parts.jpg";
 import suspensionParts from "@assets/suspension-parts.jpg";
 import electricalParts from "@assets/electrical-parts.jpg";
 import transmissionParts from "@assets/transmission-parts.jpg";
+import sparkPlugs from "@assets/spark-plugs.jpg";
+import injectors from "@assets/injectors.jpg";
 
 const categories = [
   {
     id: "1",
     name: "Spark Plugs",
-    image: electricalParts,
+    image: sparkPlugs,
     description: "Toyota, Denso & NGK spark plugs",
   },
   {
     id: "2",
     name: "Injectors",
-    image: engineParts,
+    image: injectors,
     description: "Toyota & Denso fuel injectors",
   },
   {

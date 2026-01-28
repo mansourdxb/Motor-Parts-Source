@@ -10,19 +10,21 @@ import suspensionParts from "@assets/suspension-parts.jpg";
 import electricalParts from "@assets/electrical-parts.jpg";
 import transmissionParts from "@assets/transmission-parts.jpg";
 import heroBg from "@assets/hero-bg.jpg";
+import sparkPlugs from "@assets/spark-plugs.jpg";
+import injectors from "@assets/injectors.jpg";
 
 const categories = [
   {
     id: "1",
     name: "Spark Plugs",
-    image: electricalParts,
+    image: sparkPlugs,
     description: "Premium spark plugs from Toyota, Denso, NGK, and Bosch. OEM quality for all vehicle makes and models.",
     count: 850,
   },
   {
     id: "2",
     name: "Injectors",
-    image: engineParts,
+    image: injectors,
     description: "Fuel injectors from Toyota, Denso, and Bosch. High-precision OEM and aftermarket options available.",
     count: 620,
   },
