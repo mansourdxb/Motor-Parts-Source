@@ -19,7 +19,7 @@ export default defineConfig({
         ]
       : []),
   ],
-base: "/Motor-Parts-Source/",
+base: "/",
 
 
   resolve: {
