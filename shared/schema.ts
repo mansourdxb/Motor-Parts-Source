@@ -1,5 +1,5 @@
 import { sql } from "drizzle-orm";
-import { pgTable, text, varchar } from "drizzle-orm/pg-core";
+import { pgTable, text, varchar, integer, boolean, timestamp } from "drizzle-orm/pg-core";
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
@@ -16,3 +16,53 @@ export const insertUserSchema = createInsertSchema(users).pick({
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
+
+export interface Product {
+  id: string;
+  name: string;
+  brand: string;
+  partNumber: string;
+  price: number;
+  originalPrice?: number;
+  category: string;
+  type: "OEM" | "Aftermarket";
+  image: string;
+  inStock: boolean;
+}
+
+export interface Category {
+  id: string;
+  name: string;
+  image: string;
+  description: string;
+}
+
+export interface Brand {
+  id: string;
+  name: string;
+  logo: string;
+}
+
+export interface ContactFormData {
+  name: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
+
+export const contactFormSchema = z.object({
+  name: z.string().min(2, "Name must be at least 2 characters"),
+  email: z.string().email("Please enter a valid email"),
+  phone: z.string().min(6, "Please enter a valid phone number"),
+  subject: z.string().min(3, "Subject must be at least 3 characters"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+export type ContactFormInput = z.infer<typeof contactFormSchema>;
+
+export interface Feature {
+  icon: string;
+  title: string;
+  description: string;
+}
