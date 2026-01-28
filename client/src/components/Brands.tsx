@@ -1,15 +1,24 @@
 import { Card } from "@/components/ui/card";
-import { Car } from "lucide-react";
+import { 
+  SiToyota, 
+  SiNissan, 
+  SiHonda, 
+  SiBmw, 
+  SiMercedes, 
+  SiFord, 
+  SiChevrolet, 
+  SiHyundai 
+} from "react-icons/si";
 
 const brands = [
-  { name: "Toyota" },
-  { name: "Nissan" },
-  { name: "Honda" },
-  { name: "BMW" },
-  { name: "Mercedes" },
-  { name: "Ford" },
-  { name: "Chevrolet" },
-  { name: "Hyundai" },
+  { name: "Toyota", icon: SiToyota },
+  { name: "Nissan", icon: SiNissan },
+  { name: "Honda", icon: SiHonda },
+  { name: "BMW", icon: SiBmw },
+  { name: "Mercedes", icon: SiMercedes },
+  { name: "Ford", icon: SiFord },
+  { name: "Chevrolet", icon: SiChevrolet },
+  { name: "Hyundai", icon: SiHyundai },
 ];
 
 export function Brands() {
@@ -26,20 +35,23 @@ export function Brands() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
-          {brands.map((brand, index) => (
-            <Card 
-              key={index}
-              className="p-4 flex flex-col items-center justify-center hover-elevate cursor-pointer aspect-square gap-2"
-              data-testid={`card-brand-${brand.name.toLowerCase()}`}
-            >
-              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                <Car className="h-6 w-6 text-primary" />
-              </div>
-              <span className="text-sm font-semibold text-center">
-                {brand.name}
-              </span>
-            </Card>
-          ))}
+          {brands.map((brand, index) => {
+            const IconComponent = brand.icon;
+            return (
+              <Card 
+                key={index}
+                className="p-4 flex flex-col items-center justify-center hover-elevate cursor-pointer aspect-square gap-2"
+                data-testid={`card-brand-${brand.name.toLowerCase()}`}
+              >
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <IconComponent className="h-6 w-6 text-primary" />
+                </div>
+                <span className="text-sm font-semibold text-center">
+                  {brand.name}
+                </span>
+              </Card>
+            );
+          })}
         </div>
 
         <div className="text-center mt-8">
