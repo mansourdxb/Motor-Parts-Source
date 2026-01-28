@@ -71,7 +71,7 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col" data-testid="page-contact">
       <SEO 
         title="Contact Us"
-        description="Contact Motor Parts Source L.L.C for auto parts inquiries. Located in Sharjah, UAE. Call +971 56 672 9291 or WhatsApp for quick response."
+        description="Contact Motor Parts Source L.L.C for auto parts inquiries. Located in Sharjah, UAE. Call +971 55 702 9285 or WhatsApp for quick response."
         keywords="contact motor parts source, auto parts Sharjah, car parts UAE phone"
       />
       <Header />
@@ -209,14 +209,14 @@ export default function Contact() {
                     </li>
                     <li className="flex items-center gap-3">
                       <Phone className="h-5 w-5 shrink-0 text-primary" />
-                      <a href="tel:+971566729291" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-contact-phone">
-                        +971 56 672 9291
+                      <a href="tel:+971557029285" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-contact-phone">
+                        +971 55 702 9285
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
                       <Mail className="h-5 w-5 shrink-0 text-primary" />
-                      <a href="mailto:info@mpsuae.com" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-contact-email">
-                        info@mpsuae.com
+                      <a href="mailto:sales@mpsuae.com" className="text-muted-foreground hover:text-foreground transition-colors text-sm" data-testid="link-contact-email">
+                        sales@mpsuae.com
                       </a>
                     </li>
                     <li className="flex items-center gap-3">
@@ -236,7 +236,7 @@ export default function Contact() {
                       <p className="text-sm text-muted-foreground">Chat with us on WhatsApp</p>
                     </div>
                   </div>
-                  <a href="https://wa.me/971566729291" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
                     <Button className="w-full bg-green-600 border-green-700" data-testid="button-whatsapp-contact">
                       Start Chat
                     </Button>

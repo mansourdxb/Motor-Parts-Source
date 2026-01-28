@@ -20,7 +20,7 @@ export function Footer() {
             </p>
             <div className="flex gap-3 flex-wrap">
               <a 
-                href="https://wa.me/971566729291" 
+                href="https://wa.me/971557029285" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-background/10 p-2.5 rounded-lg transition-colors hover-elevate"
@@ -126,14 +126,14 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 shrink-0 text-accent" />
-                <a href="tel:+971566729291" className="text-background/70 hover:text-background transition-colors text-sm" data-testid="link-footer-phone">
-                  +971 56 672 9291
+                <a href="tel:+971557029285" className="text-background/70 hover:text-background transition-colors text-sm" data-testid="link-footer-phone">
+                  +971 55 702 9285
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 shrink-0 text-accent" />
-                <a href="mailto:info@mpsuae.com" className="text-background/70 hover:text-background transition-colors text-sm" data-testid="link-footer-email">
-                  info@mpsuae.com
+                <a href="mailto:sales@mpsuae.com" className="text-background/70 hover:text-background transition-colors text-sm" data-testid="link-footer-email">
+                  sales@mpsuae.com
                 </a>
               </li>
               <li className="flex items-center gap-3">

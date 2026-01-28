@@ -16,13 +16,13 @@ export function CTA() {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="https://wa.me/971566729291" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-green-600 border-green-700 text-white gap-2" data-testid="button-cta-whatsapp">
                 <SiWhatsapp className="h-5 w-5" />
                 Chat on WhatsApp
               </Button>
             </a>
-            <a href="tel:+971566729291">
+            <a href="tel:+971557029285">
               <Button size="lg" variant="outline" className="bg-white/10 border-white/30 text-white gap-2" data-testid="button-cta-call">
                 <Phone className="h-5 w-5" />
                 Call Us Now

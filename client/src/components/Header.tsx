@@ -22,17 +22,17 @@ export function Header() {
       <div className="bg-primary text-primary-foreground py-2">
         <div className="container mx-auto px-4 flex flex-wrap justify-between items-center gap-2 text-sm">
           <div className="flex items-center gap-4 flex-wrap">
-            <a href="tel:+971566729291" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" data-testid="link-phone">
+            <a href="tel:+971557029285" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" data-testid="link-phone">
               <Phone className="h-3.5 w-3.5" />
-              <span>+971 56 672 9291</span>
+              <span>+971 55 702 9285</span>
             </a>
-            <a href="mailto:info@mpsuae.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" data-testid="link-email">
+            <a href="mailto:sales@mpsuae.com" className="flex items-center gap-1.5 hover:opacity-80 transition-opacity" data-testid="link-email">
               <Mail className="h-3.5 w-3.5" />
-              <span>info@mpsuae.com</span>
+              <span>sales@mpsuae.com</span>
             </a>
           </div>
           <a 
-            href="https://wa.me/971566729291" 
+            href="https://wa.me/971557029285" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 bg-green-600 text-white px-3 py-1 rounded-md transition-colors"
