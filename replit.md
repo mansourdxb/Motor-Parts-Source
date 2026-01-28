@@ -2,7 +2,7 @@
 
 ## Overview
 
-Motor Parts Source (MPS) is a B2B e-commerce platform for automotive parts distribution based in the UAE. The application serves workshops, fleet managers, and professional buyers with OEM and aftermarket parts for all major automotive brands. The platform features product browsing, category navigation, and contact/quote request functionality with WhatsApp integration for customer communication.
+Motor Parts Source (MPS) is a B2B wholesale e-commerce platform for automotive parts distribution based in the UAE. The application serves workshops, garages, fleet managers, and trade buyers with wholesale OEM and aftermarket parts for all major automotive brands. The platform emphasizes wholesale/bulk pricing and features product browsing, category navigation, and contact/quote request functionality with WhatsApp integration for customer communication.
 
 ## User Preferences
 

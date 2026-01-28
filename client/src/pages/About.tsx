@@ -48,7 +48,7 @@ export default function About() {
     <div className="min-h-screen flex flex-col" data-testid="page-about">
       <SEO 
         title="About Us"
-        description="Learn about Motor Parts Source L.L.C - your trusted auto parts supplier in UAE. Over 10 years of experience, 50K+ parts, serving 5000+ customers with 24/7 support."
+        description="Motor Parts Source L.L.C - wholesale auto parts supplier in UAE. Bulk pricing for workshops and garages. 10+ years experience, 50K+ parts available."
         keywords="about motor parts source, UAE auto parts company, car parts Sharjah"
       />
       <Header />
@@ -60,9 +60,9 @@ export default function About() {
                 About Motor Parts Source
               </h1>
               <p className="text-lg text-primary-foreground/90">
-                Established in the UAE, Motor Parts Source L.L.C is your trusted partner for 
-                premium automotive parts. We combine industry expertise with exceptional 
-                customer service to deliver the best parts shopping experience.
+                Established in the UAE, Motor Parts Source L.L.C is your trusted wholesale partner for 
+                premium automotive parts. We supply workshops, garages, and trade buyers with quality 
+                OEM and aftermarket parts at competitive wholesale prices.
               </p>
             </div>
           </div>
@@ -76,10 +76,9 @@ export default function About() {
                   Your Trusted <span className="gradient-text">Auto Parts Partner</span>
                 </h2>
                 <p className="text-muted-foreground mb-6">
-                  At Motor Parts Source, we understand the importance of having the right 
-                  parts for your vehicle. Whether you're a professional mechanic, workshop 
-                  owner, or car enthusiast, we're here to provide you with quality parts 
-                  at competitive prices.
+                  At Motor Parts Source, we specialize in wholesale auto parts distribution. 
+                  We serve workshops, garages, fleet operators, and trade buyers with bulk 
+                  orders at competitive wholesale prices.
                 </p>
                 <p className="text-muted-foreground mb-8">
                   Our extensive network of suppliers allows us to source both OEM and 

@@ -13,8 +13,8 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col" data-testid="page-home">
       <SEO 
-        title="Premium Auto Parts in UAE"
-        description="Motor Parts Source L.L.C is your trusted partner for OEM and aftermarket auto parts in UAE. Fast delivery, quality guaranteed, 24/7 support."
+        title="Wholesale Auto Parts in UAE"
+        description="Motor Parts Source L.L.C - wholesale supplier of OEM and aftermarket auto parts in UAE. Bulk pricing for workshops and trade buyers. Fast delivery."
         keywords="auto parts UAE, motor parts, OEM parts, aftermarket parts, car parts Sharjah"
       />
       <Header />

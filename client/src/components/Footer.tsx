@@ -15,8 +15,8 @@ export function Footer() {
               className="h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-background/70 text-sm mb-6">
-              Your trusted partner for premium motor parts in the UAE. 
-              Quality OEM and aftermarket parts for all makes and models.
+              Your wholesale partner for premium motor parts in the UAE. 
+              Bulk pricing on OEM and aftermarket parts for workshops and trade buyers.
             </p>
             <div className="flex gap-3 flex-wrap">
               <a 

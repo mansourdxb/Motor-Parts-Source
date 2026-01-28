@@ -15,17 +15,17 @@ export function Hero() {
         <div className="max-w-3xl">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 text-white text-sm mb-6">
             <ShieldCheck className="h-4 w-4" />
-            <span>Trusted Auto Parts Supplier in UAE</span>
+            <span>Wholesale Auto Parts Supplier in UAE</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6" data-testid="text-hero-title">
-            Your Reliable Partner for
+            Your Wholesale Partner for
             <span className="block text-orange-300">Premium Motor Parts</span>
           </h1>
           
           <p className="text-lg sm:text-xl text-white/90 mb-8 max-w-2xl" data-testid="text-hero-description">
-            Browse through thousands of OEM and aftermarket parts from verified suppliers. 
-            Fast delivery across the UAE and worldwide shipping available.
+            Wholesale supplier of OEM and aftermarket parts for workshops, garages, and trade buyers. 
+            Bulk pricing, fast delivery across UAE, and worldwide shipping available.
           </p>
           
           <div className="flex flex-wrap gap-4 mb-12">
