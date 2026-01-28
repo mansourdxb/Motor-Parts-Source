@@ -8,7 +8,7 @@ import suspensionParts from "@assets/suspension-parts.jpg";
 import electricalParts from "@assets/electrical-parts.jpg";
 import transmissionParts from "@assets/transmission-parts.jpg";
 import sparkPlugs from "@assets/image_1769588542997.png";
-import injectors from "@assets/injectors.jpg";
+import injectors from "@assets/image_1769588597393.png";
 
 const categories = [
   {
