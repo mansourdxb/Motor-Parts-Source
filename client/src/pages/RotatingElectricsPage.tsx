@@ -84,9 +84,9 @@ export default function RotatingElectricsPage() {
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
-                    <Link href="/contact">
-                      <Button className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90" data-testid={`button-rotating-${product.id}`}>
-                        Get Quote
+                    <Link href={`/categories/rotating-electrics/${product.slug}`}>
+                      <Button className="w-full gap-2" data-testid={`button-rotating-${product.id}`}>
+                        More Information
                         <ArrowRight className="h-4 w-4" />
                       </Button>
                     </Link>

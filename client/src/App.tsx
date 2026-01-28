@@ -15,10 +15,15 @@ import ACProductDetailPage from "@/pages/ACProductDetailPage";
 import DieselComponentsPage from "@/pages/DieselComponentsPage";
 import DieselProductDetailPage from "@/pages/DieselProductDetailPage";
 import EngineManagementPage from "@/pages/EngineManagementPage";
+import EngineManagementProductDetailPage from "@/pages/EngineManagementProductDetailPage";
 import FiltrationPage from "@/pages/FiltrationPage";
+import FiltrationProductDetailPage from "@/pages/FiltrationProductDetailPage";
 import IgnitionPage from "@/pages/IgnitionPage";
+import IgnitionProductDetailPage from "@/pages/IgnitionProductDetailPage";
 import RotatingElectricsPage from "@/pages/RotatingElectricsPage";
+import RotatingElectricsProductDetailPage from "@/pages/RotatingElectricsProductDetailPage";
 import WiperBladesPage from "@/pages/WiperBladesPage";
+import WiperBladesProductDetailPage from "@/pages/WiperBladesProductDetailPage";
 
 function Router() {
   return (
@@ -33,10 +38,15 @@ function Router() {
       <Route path="/categories/diesel-components" component={DieselComponentsPage} />
       <Route path="/categories/diesel-components/:slug" component={DieselProductDetailPage} />
       <Route path="/categories/engine-management" component={EngineManagementPage} />
+      <Route path="/categories/engine-management/:slug" component={EngineManagementProductDetailPage} />
       <Route path="/categories/filtration" component={FiltrationPage} />
+      <Route path="/categories/filtration/:slug" component={FiltrationProductDetailPage} />
       <Route path="/categories/ignition" component={IgnitionPage} />
+      <Route path="/categories/ignition/:slug" component={IgnitionProductDetailPage} />
       <Route path="/categories/rotating-electrics" component={RotatingElectricsPage} />
+      <Route path="/categories/rotating-electrics/:slug" component={RotatingElectricsProductDetailPage} />
       <Route path="/categories/wiper-blades" component={WiperBladesPage} />
+      <Route path="/categories/wiper-blades/:slug" component={WiperBladesProductDetailPage} />
       <Route component={NotFound} />
     </Switch>
   );

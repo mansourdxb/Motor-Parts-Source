@@ -91,7 +91,7 @@ export default function WiperBladesPage() {
                     />
                   </div>
                   <div className="p-6">
-                    <div className="flex items-center justify-between gap-2 mb-2">
+                    <div className="mb-2">
                       <h3 className="font-bold group-hover:text-primary transition-colors">
                         {product.name}
                       </h3>
@@ -102,9 +102,9 @@ export default function WiperBladesPage() {
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
-                    <Link href="/contact">
-                      <Button className="w-full gap-2 bg-accent text-accent-foreground hover:bg-accent/90" data-testid={`button-wiper-${product.id}`}>
-                        Get Quote
+                    <Link href={`/categories/wiper-blades/${product.slug}`}>
+                      <Button className="w-full gap-2" data-testid={`button-wiper-${product.id}`}>
+                        More Information
                         <ArrowRight className="h-4 w-4" />
                       </Button>
                     </Link>
