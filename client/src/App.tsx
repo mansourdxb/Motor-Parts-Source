@@ -13,6 +13,7 @@ import CategoriesPage from "@/pages/CategoriesPage";
 import ACEngineCoolingPage from "@/pages/ACEngineCoolingPage";
 import ACProductDetailPage from "@/pages/ACProductDetailPage";
 import DieselComponentsPage from "@/pages/DieselComponentsPage";
+import DieselProductDetailPage from "@/pages/DieselProductDetailPage";
 import EngineManagementPage from "@/pages/EngineManagementPage";
 import FiltrationPage from "@/pages/FiltrationPage";
 import IgnitionPage from "@/pages/IgnitionPage";
@@ -30,6 +31,7 @@ function Router() {
       <Route path="/categories/ac-engine-cooling" component={ACEngineCoolingPage} />
       <Route path="/categories/ac-engine-cooling/:slug" component={ACProductDetailPage} />
       <Route path="/categories/diesel-components" component={DieselComponentsPage} />
+      <Route path="/categories/diesel-components/:slug" component={DieselProductDetailPage} />
       <Route path="/categories/engine-management" component={EngineManagementPage} />
       <Route path="/categories/filtration" component={FiltrationPage} />
       <Route path="/categories/ignition" component={IgnitionPage} />

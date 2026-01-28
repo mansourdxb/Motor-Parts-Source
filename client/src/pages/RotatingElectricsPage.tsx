@@ -3,9 +3,8 @@ import { Footer } from "@/components/Footer";
 import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import rotatingImg from "@assets/denso-rotating-cat.jpg";
 import alternatorImg from "@assets/denso-alternator.jpg";
 import starterImg from "@assets/denso-starter.jpg";
 
@@ -16,6 +15,7 @@ const rotatingProducts = [
     image: alternatorImg,
     description: "Denso alternators for reliable electrical power generation and battery charging.",
     slug: "alternators",
+    count: 380,
   },
   {
     id: "2",
@@ -23,6 +23,7 @@ const rotatingProducts = [
     image: starterImg,
     description: "High-torque starter motors for dependable engine cranking.",
     slug: "starters",
+    count: 320,
   },
 ];
 
@@ -36,60 +37,50 @@ export default function RotatingElectricsPage() {
       />
       <Header />
       <main className="flex-1">
-        <section className="bg-primary text-primary-foreground py-12 lg:py-16">
+        <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <Link href="/categories">
-              <Button variant="outline" size="sm" className="mb-6 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
-                All Categories
+              <Button variant="outline" className="mb-6 gap-2 bg-white/10 border-white/30 text-white hover:bg-white/20" data-testid="button-back-categories">
+                <ArrowLeft className="h-4 w-4" />
+                Back to Categories
               </Button>
             </Link>
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div>
-                <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-                  Rotating Electrics
-                </h1>
-                <p className="text-primary-foreground/90 mb-6 max-w-lg">
-                  Premium Denso rotating electrical components for reliable power generation and engine starting. From alternators to starter motors, we supply quality parts for all vehicles.
-                </p>
-                <div className="flex flex-wrap gap-3">
-                  <Link href="/contact">
-                    <Button variant="outline" className="bg-white/10 border-white/30 text-white hover:bg-white/20">Request Quote</Button>
-                  </Link>
-                  <a href="https://wa.me/971557029285" target="_blank" rel="noopener noreferrer">
-                    <Button className="bg-white text-primary hover:bg-white/90">
-                      WhatsApp Us
-                    </Button>
-                  </a>
-                </div>
-              </div>
-              <div className="hidden lg:flex justify-end">
-                <img 
-                  src={rotatingImg} 
-                  alt="Rotating Electrics"
-                  className="max-w-md rounded-lg"
-                />
-              </div>
-            </div>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-4" data-testid="text-rotating-title">
+              Rotating Electrics
+            </h1>
+            <p className="text-lg text-primary-foreground/90 max-w-2xl">
+              Premium Denso rotating electrical components for reliable power generation and engine starting. 
+              From alternators to starter motors - quality parts for all vehicles.
+            </p>
           </div>
         </section>
 
         <section className="py-12 lg:py-16">
           <div className="container mx-auto px-4">
-            <h2 className="text-2xl lg:text-3xl font-bold mb-8">
-              Rotating Electrics Products
-            </h2>
+            <h2 className="text-2xl lg:text-3xl font-bold mb-8">Rotating Electrics Products</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {rotatingProducts.map((product) => (
-                <Card key={product.id} className="overflow-visible hover-elevate" data-testid={`card-rotating-${product.id}`}>
-                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-4">
+                <Card 
+                  key={product.id}
+                  className="group overflow-visible hover-elevate"
+                  data-testid={`card-rotating-${product.id}`}
+                >
+                  <div className="aspect-video overflow-hidden rounded-t-md bg-muted flex items-center justify-center p-6">
                     <img 
                       src={product.image} 
                       alt={product.name}
-                      className="max-h-full object-contain"
+                      className="max-h-full object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="font-bold text-lg mb-2">{product.name}</h3>
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                        {product.name}
+                      </h3>
+                      <span className="text-sm text-muted-foreground whitespace-nowrap">
+                        {product.count}+ parts
+                      </span>
+                    </div>
                     <p className="text-muted-foreground text-sm mb-4">
                       {product.description}
                     </p>
