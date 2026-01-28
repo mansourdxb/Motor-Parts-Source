@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import rotatingImg from "@assets/rotating-electrics.jpg";
+import rotatingImg from "@assets/denso-rotating-cat.jpg";
 
 const rotatingProducts = [
   {

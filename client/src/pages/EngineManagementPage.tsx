@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import engineMgmtImg from "@assets/engine-management.jpg";
+import engineMgmtImg from "@assets/denso-ems-cat.jpg";
 
 const engineManagementProducts = [
   {

@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import dieselImg from "@assets/diesel-components.jpg";
+import dieselImg from "@assets/denso-diesel-cat.jpg";
 
 const dieselProducts = [
   {

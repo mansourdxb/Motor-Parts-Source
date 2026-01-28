@@ -1,11 +1,11 @@
 import { Link } from "wouter";
-import acCooling from "@assets/ac-cooling.jpg";
-import dieselComponents from "@assets/diesel-components.jpg";
-import engineManagement from "@assets/engine-management.jpg";
-import filtration from "@assets/filtration.jpg";
-import ignition from "@assets/ignition-parts.jpg";
-import rotatingElectrics from "@assets/rotating-electrics.jpg";
-import wiperBlades from "@assets/wiper-blades.jpg";
+import acCooling from "@assets/denso-ac-category.jpg";
+import dieselComponents from "@assets/denso-diesel-cat.jpg";
+import engineManagement from "@assets/denso-ems-cat.jpg";
+import filtration from "@assets/denso-filtration-cat.png";
+import ignition from "@assets/denso-ignition-cat.jpg";
+import rotatingElectrics from "@assets/denso-rotating-cat.jpg";
+import wiperBlades from "@assets/denso-wiper-cat.jpg";
 
 const categories = [
   {

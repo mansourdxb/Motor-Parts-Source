@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import ignitionImg from "@assets/ignition-parts.jpg";
+import ignitionImg from "@assets/denso-ignition-cat.jpg";
 
 const ignitionProducts = [
   {

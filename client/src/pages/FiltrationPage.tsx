@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import filtrationImg from "@assets/filtration.jpg";
+import filtrationImg from "@assets/denso-filtration-cat.png";
 
 const filtrationProducts = [
   {

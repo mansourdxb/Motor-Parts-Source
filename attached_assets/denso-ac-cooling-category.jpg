@@ -1,0 +1,1064 @@
+
+
+<!doctype html>
+<html
+    lang="en-AE"
+        dir="ltr"
+>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        <link href="/dist/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <link rel="preconnect" href="/api/v1">
+        <link rel="preconnect" href="/api/v1/categories">
+        <link rel="preconnect" href="/api/v1/makers">
+        <link rel="preconnect" href="/api/v1/parts">
+
+                            <script>
+            window.DENSO = window.DENSO || {};
+                        window.DENSO.primarySite = 'https://denso.ae';
+            window.DENSO.globalCountriesList = JSON.parse('\u007B\u0022al\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Albania\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022albania\u0022\u007D,\u0022am\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Armenia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022armenia\u0022\u007D,\u0022at\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Austria\u0022,\u0022link\u0022\u003A\u0022\\\/de\u0022,\u0022flag\u0022\u003A\u0022austria\u0022\u007D,\u0022az\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Azerbaijan\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022azerbaijan\u0022\u007D,\u0022by\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Belarus\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022belarus\u0022\u007D,\u0022be\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Belgium\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022belgium\u0022\u007D,\u0022ba\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Bosnia\u0020and\u0020Herzegovina\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022bosniaHerzegovina\u0022\u007D,\u0022bg\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Bulgaria\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022bulgaria\u0022\u007D,\u0022hr\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Croatia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022croatia\u0022\u007D,\u0022cy\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Cyprus\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022cyprus\u0022\u007D,\u0022cz\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Czech\u0020Republic\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022czechRepublic\u0022\u007D,\u0022dk\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Denmark\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022denmark\u0022\u007D,\u0022de\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Deutschland\u0022,\u0022link\u0022\u003A\u0022\\\/de\u0022,\u0022flag\u0022\u003A\u0022germany\u0022\u007D,\u0022ee\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Estonia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022estonia\u0022\u007D,\u0022eu\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Europe\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022europe\u0022\u007D,\u0022fi\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Finland\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022finland\u0022\u007D,\u0022fr\u0022\u003A\u007B\u0022title\u0022\u003A\u0022France\u0022,\u0022link\u0022\u003A\u0022\\\/fr\u0022,\u0022flag\u0022\u003A\u0022france\u0022\u007D,\u0022ge\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Georgia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022georgia\u0022\u007D,\u0022gr\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Greece\u0022,\u0022link\u0022\u003A\u0022\\\/gr\u0022,\u0022flag\u0022\u003A\u0022greece\u0022\u007D,\u0022hu\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Hungary\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022hungary\u0022\u007D,\u0022is\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Iceland\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022iceland\u0022\u007D,\u0022ie\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Ireland\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022ireland\u0022\u007D,\u0022il\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Israel\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022israel\u0022\u007D,\u0022it\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Italy\u0022,\u0022link\u0022\u003A\u0022\\\/it\u0022,\u0022flag\u0022\u003A\u0022italy\u0022\u007D,\u0022kz\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Kazakhstan\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022kazakhstan\u0022\u007D,\u0022XK\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Kosovo\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022kosovo\u0022\u007D,\u0022kg\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Kyrgyzstan\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022kyrgyzstan\u0022\u007D,\u0022lv\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Latvia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022latvia\u0022\u007D,\u0022lt\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Lithuania\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022lithuania\u0022\u007D,\u0022lu\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Luxembourg\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022luxembourg\u0022\u007D,\u0022mk\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Macedonia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022macedonia\u0022\u007D,\u0022mt\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Malta\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022malta\u0022\u007D,\u0022md\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Moldova\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022moldova\u0022\u007D,\u0022me\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Montenegro\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022montenegro\u0022\u007D,\u0022nl\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Netherlands\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022netherlands\u0022\u007D,\u0022no\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Norway\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022norway\u0022\u007D,\u0022pl\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Poland\u0022,\u0022link\u0022\u003A\u0022\\\/pl\u0022,\u0022flag\u0022\u003A\u0022poland\u0022\u007D,\u0022pt\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Portugal\u0022,\u0022link\u0022\u003A\u0022\\\/pt\u0022,\u0022flag\u0022\u003A\u0022portugal\u0022\u007D,\u0022ro\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Romania\u0022,\u0022link\u0022\u003A\u0022\\\/ro\u0022,\u0022flag\u0022\u003A\u0022romania\u0022\u007D,\u0022ru\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Russia\u0022,\u0022link\u0022\u003A\u0022\\\/ru\u0022,\u0022flag\u0022\u003A\u0022russia\u0022\u007D,\u0022rs\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Serbia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022serbia\u0022\u007D,\u0022sk\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Slovakia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022slovakia\u0022\u007D,\u0022si\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Slovenia\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022slovenia\u0022\u007D,\u0022es\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Spain\u0022,\u0022link\u0022\u003A\u0022\\\/es\u0022,\u0022flag\u0022\u003A\u0022spain\u0022\u007D,\u0022se\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Sweden\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022sweden\u0022\u007D,\u0022ch\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Switzerland\u0022,\u0022link\u0022\u003A\u0022\\\/de\u0022,\u0022flag\u0022\u003A\u0022switzerland\u0022\u007D,\u0022tr\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Turkey\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022turkey\u0022\u007D,\u0022ua\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Ukraine\u0022,\u0022link\u0022\u003A\u0022\\\/ua\u0022,\u0022flag\u0022\u003A\u0022ukraine\u0022\u007D,\u0022gb\u0022\u003A\u007B\u0022title\u0022\u003A\u0022United\u0020Kingdom\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022unitedKingdom\u0022\u007D,\u0022uz\u0022\u003A\u007B\u0022title\u0022\u003A\u0022Uzbekistan\u0022,\u0022link\u0022\u003A\u0022\\\/\u0022,\u0022flag\u0022\u003A\u0022uzbekistan\u0022\u007D\u007D');
+
+            window.DENSO.upcomingFeatureModalText = 'RmVhdHVyZSBpcyBjb21pbmcgc29vbiE=';
+        </script>
+
+        
+    <title>Error 404 | DENSO</title>
+<script type="module">!function(){const e=document.createElement("link").relList;if(!(e&&e.supports&&e.supports("modulepreload"))){for(const e of document.querySelectorAll('link[rel="modulepreload"]'))r(e);new MutationObserver((e=>{for(const o of e)if("childList"===o.type)for(const e of o.addedNodes)if("LINK"===e.tagName&&"modulepreload"===e.rel)r(e);else if(e.querySelectorAll)for(const o of e.querySelectorAll("link[rel=modulepreload]"))r(o)})).observe(document,{childList:!0,subtree:!0})}function r(e){if(e.ep)return;e.ep=!0;const r=function(e){const r={};return e.integrity&&(r.integrity=e.integrity),e.referrerpolicy&&(r.referrerPolicy=e.referrerpolicy),"use-credentials"===e.crossorigin?r.credentials="include":"anonymous"===e.crossorigin?r.credentials="omit":r.credentials="same-origin",r}(e);fetch(e.href,r)}}();</script>
+<script>!function(){var e=document.createElement("script");if(!("noModule"in e)&&"onbeforeload"in e){var t=!1;document.addEventListener("beforeload",(function(n){if(n.target===e)t=!0;else if(!n.target.hasAttribute("nomodule")||!t)return;n.preventDefault()}),!0),e.type="module",e.src=".",document.head.appendChild(e),e.remove()}}();</script>
+<script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments)};
+gtag('js', new Date());
+gtag('config', 'G-74Y6KNVY3P', {'send_page_view': true,'anonymize_ip': false,'link_attribution': true,'allow_display_features': false});
+</script><meta name="description" content="DENSO Aftermarket and Industrial Solutions includes several business domains spanning a range of industries beyond automotive parts.">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="none">
+<meta content="DENSO.MENA.official" property="fb:profile_id">
+<meta content="en_AE" property="og:locale">
+<meta content="DENSO" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="Error 404" property="og:title">
+<meta content="DENSO Aftermarket and Industrial Solutions includes several business domains spanning a range of industries beyond automotive parts." property="og:description">
+<meta content="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTcwODM4ODY3Ny5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjgyLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MzAsImZpdCI6ImNvdmVyIn19fQ==?mtime=1665141408" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@DENSO_MENA">
+<meta name="twitter:creator" content="@DENSO_MENA">
+<meta name="twitter:title" content="Error 404">
+<meta name="twitter:description" content="DENSO Aftermarket and Industrial Solutions includes several business domains spanning a range of industries beyond automotive parts.">
+<meta name="twitter:image" content="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTcwODM4ODY3Ny5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjgyLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6ODAwLCJoZWlnaHQiOjgwMCwiZml0IjoiY292ZXIifX19?mtime=1665141408">
+<meta name="twitter:image:width" content="800">
+<meta name="twitter:image:height" content="800">
+<link href="https://denso.ae/" rel="home">
+<link type="text/plain" href="https://denso.ae/humans.txt" rel="author">
+<link href="https://denso.ae/dist/assets/app-BkitIkJd.css" rel="stylesheet">
+<script>window.DENSO = window.DENSO || {};
+            window.DENSO.sentry = {
+                dsn: 'https\u003A\/\/d9a628fbcbbd496fa552103c015fbd27\u0040sentry.yournext.agency\/94',
+                environment: 'production',
+                release: ''
+            };
+window.DENSO = window.DENSO || {};
+    window.DENSO = Object.assign(window.DENSO, {"csrfTokenName":"CRAFT_CSRF_TOKEN","csrfTokenValue":"2aTstgNmu0mBK5httNJ6q770OEBtAOuJ2TLAO26fTeVg8rWmtEe8-O_8oe9LCf0-ylzZXMO9CczwtwAYHVfb5a8LtElZzSOEDZjbyc4P18w="});</script></head>
+
+    <body><script async src="https://www.googletagmanager.com/gtag/js?id=G-74Y6KNVY3P"></script>
+
+        <div class="js-geo-message">
+            
+        </div>
+        <main role="main">
+
+<header class="header">
+    <div class="header__top">
+        <div class="wrapper wrapper_full">
+            <div class="header__top-inner">
+                <div class="header__lang"><div class="lang-switch" data-mlangs="[{&quot;title&quot;:&quot;English&quot;,&quot;value&quot;:&quot;&quot;,&quot;isActive&quot;:true},{&quot;title&quot;:&quot;French&quot;,&quot;value&quot;:&quot;fr&quot;,&quot;isActive&quot;:false},{&quot;title&quot;:&quot;Arabic&quot;,&quot;value&quot;:&quot;ar&quot;,&quot;isActive&quot;:false}]">
+        <button class="lang-switch__btn" type="button">
+            <span class="lang-switch__btn-current lang-switch__btn-current_active">
+                English
+            </span>
+        </button>
+
+        <div class="lang-switch__dd">
+                            <ul class="lang-switch__dd-list">
+                                            <li class="lang-switch__dd-item lang-switch__dd-item_current">
+                                                            <a href="/" class="lang-switch__dd-item-title">
+                                    English
+                                </a>
+                                                    </li>
+                                            <li class="lang-switch__dd-item">
+                                                            <a href="/fr" class="lang-switch__dd-item-title">
+                                    French
+                                </a>
+                                                    </li>
+                                            <li class="lang-switch__dd-item">
+                                                            <a href="/ar" class="lang-switch__dd-item-title">
+                                    Arabic
+                                </a>
+                                                    </li>
+                                    </ul>
+                    </div>
+    </div></div>
+
+                <nav class="header__top-nav">
+                    <ul class="header__nav">
+                                                    
+                                                                
+                                                                                                                                        
+                                                                    
+                                <li class="header__nav-item">
+                                    <a
+                                        href=""
+                                                                                    data-dropdown='#header-modal-download-area'
+                                                                                class="header__nav-link"
+                                                                                                                                                            ></a>
+                                </li>
+                            
+                                                                
+                                                                                                                                        
+                                                                    
+                                <li class="header__nav-item">
+                                    <a
+                                        href=""
+                                                                                    data-dropdown='#header-modal-news-and-updates'
+                                                                                class="header__nav-link"
+                                                                                                                                                            ></a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+                                    <a
+                                        href=""
+                                                                                class="header__nav-link"
+                                                                                                                                                            ></a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+                                    <a
+                                        href=""
+                                                                                class="header__nav-link"
+                                                                                                                                                            ></a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+                                    <a
+                                        href=""
+                                                                                class="header__nav-link"
+                                                                                                                                                            ></a>
+                                </li>
+                                                                        </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__main">
+        <div class="wrapper wrapper_full wrapper_header">
+            <div class="header__main-inner">
+                <div class="header__logo">
+                    <picture class="header__logo-media">
+                        <img class="header__logo-img" srcset="/dist/images/logo.png 1x, /dist/images/logo@2x.png 2x, /dist/images/logo@3x.png 3x" width="217" height="73" alt="Denso Logo">
+                    </picture>
+                    <a
+                        class="header__logo-link"
+                        href="https://denso.ae"
+                        title="Go to home page"
+                    >DENSO</a>
+                </div>
+
+                                    <nav class="header__main-nav">
+                        <ul class="header__nav header__nav_big">
+                            
+                                                                
+                                                                                                                                        
+                                                                    
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/about"
+                                                                                    data-dropdown='#header-modal-company'
+                                                                                class="header__nav-link"
+                                                                                                                    >About Us</a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/catalog"
+                                                                                class="header__nav-link"
+                                                                                    data-attr="fmp-link"
+                                            data-language-prefix=""
+                                                                                                                    >Find My Part</a>
+                                </li>
+                            
+                                                                
+                                                                                                                                        
+                                                                    
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/products"
+                                                                                    data-dropdown='#header-modal-other'
+                                                                                class="header__nav-link"
+                                                                                                                    >Products</a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/services"
+                                                                                class="header__nav-link"
+                                                                                                                    >Services</a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/where-to-buy"
+                                                                                class="header__nav-link"
+                                                                                                                    >Where to buy and repair</a>
+                                </li>
+                            
+                                                                
+                                                                
+                                <li class="header__nav-item">
+
+                                    <a
+                                        href="https://denso.ae/contacts"
+                                                                                class="header__nav-link"
+                                                                                                                    >Contact Us</a>
+                                </li>
+                                                    </ul>                            <div class="header__sub-nav">
+                                <div class="wrapper">
+                                    <div class="header__sub-nav-inner">
+                                        <button
+        class="close-button header__sub-nav-close"
+        type="button">
+        <svg class="close-button__icon">
+            <use xlink:href="/dist/images/denso-sprite.svg#cross" />
+        </svg>
+    </button>
+                                                                                        <div class="header__sub-nav-item" id='header-modal-download-area'>
+                                                    
+<div class="header__sub-nav-part">
+            <div class="header__sub-nav-title">Download area</div>
+
+            <div class="header__sub-nav-content">                                        
+                                                                            
+                                    
+                                            <div class="banners-grid">
+            <div class="banners-grid__inner"><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5EQXVOVFF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pZMk1pdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5EQXVOVFF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pZMk1pdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5EQXVOVFF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pZMk1pdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5EQXVOVFF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pZMk1pdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJzdGFnaW5nL2NvbW1vbi9TY3JlZW5zaG90LTIwMjUtMDgtMTUtYXQtMTAuNDAuNTQtQU0ucG5nIiwiZWRpdHMiOnsicG5nIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlfSwicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjY2Miw.webp"
+                        width="1000"
+                        height="662"
+                        alt="Downloads"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/downloads" class="banners-grid__item-title">Downloads</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5ETXVNakF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pVMU9Tdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5ETXVNakF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pVMU9Tdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5ETXVNakF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pVMU9Tdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9leUppZFdOclpYUWlPaUpoYzNObGRITXVaR1Z1YzI4dVlXVWlMQ0pyWlhraU9pSnpkR0ZuYVc1bkwyTnZiVzF2Ymk5VFkzSmxaVzV6YUc5MExUSXdNalV0TURndE1UVXRZWFF0TVRBdU5ETXVNakF0UVUwdWNHNW5JaXdpWldScGRITWlPbnNpY0c1bklqcDdJbkYxWVd4cGRIa2lPakV3TUN3aWNISnZaM0psYzNOcGRtVWlPbVpoYkhObGZTd2ljbVZ6YVhwbElqcDdJbmRwWkhSb0lqb3hNREF3TENKb1pXbG5hSFFpT2pVMU9Tdy53ZWJwIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJzdGFnaW5nL2NvbW1vbi9TY3JlZW5zaG90LTIwMjUtMDgtMTUtYXQtMTAuNDMuMjAtQU0ucG5nIiwiZWRpdHMiOnsicG5nIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlfSwicmVzaXplIjp7IndpZHRoIjoxMDAwLCJoZWlnaHQiOjU1OSw.webp"
+                        width="1000"
+                        height="559"
+                        alt="Digital Marketing"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/social-media-library" class="banners-grid__item-title">Digital Marketing</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div></div>
+        </div>
+    
+                            </div>
+        </div>
+                                                </div>
+                                                                                        <div class="header__sub-nav-item" id='header-modal-news-and-updates'>
+                                                    
+<div class="header__sub-nav-part">
+            <div class="header__sub-nav-title">News and Updates</div>
+
+            <div class="header__sub-nav-content">                                        
+                                                                            
+                                                                            
+                                    
+                                            <div class="banners-grid">
+            <div class="banners-grid__inner"><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzEyMzc0NzMwLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzEyMzc0NzMwLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzEyMzc0NzMwLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzEyMzc0NzMwLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/shutterstock_712374730.jpg"
+                        width="5405"
+                        height="1944"
+                        alt="News"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/news" class="banners-grid__item-title">News</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9CcmFuZF9XaGVlbHNfV2ViLVBhZ2VfMTI4MHgzNTAuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9CcmFuZF9XaGVlbHNfV2ViLVBhZ2VfMTI4MHgzNTAuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9CcmFuZF9XaGVlbHNfV2ViLVBhZ2VfMTI4MHgzNTAuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9CcmFuZF9XaGVlbHNfV2ViLVBhZ2VfMTI4MHgzNTAuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/Brand_Wheels_Web-Page_1280x350.jpg"
+                        width="1280"
+                        height="350"
+                        alt="Product updates"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/product-updates" class="banners-grid__item-title">Product updates</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzE5OTM5NjY4LmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzE5OTM5NjY4LmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzE5OTM5NjY4LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfNzE5OTM5NjY4LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/shutterstock_719939668.jpg"
+                        width="6112"
+                        height="2050"
+                        alt="Events"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/events" class="banners-grid__item-title">Events</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div></div>
+        </div>
+    
+                            </div>
+        </div>
+                                                </div>
+                                                                                        <div class="header__sub-nav-item" id='header-modal-company'>
+                                                    
+<div class="header__sub-nav-part">
+            <div class="header__sub-nav-title">Company</div>
+
+            <div class="header__sub-nav-content">                                        
+                                                                            
+                                                                            
+                                                                            
+                                    
+                                            <div class="banners-grid">
+            <div class="banners-grid__inner"><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9ETkVVLUhRXzA0MDQuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9ETkVVLUhRXzA0MDQuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9ETkVVLUhRXzA0MDQuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9ETkVVLUhRXzA0MDQuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/DNEU-HQ_0404.jpg"
+                        width="4608"
+                        height="3072"
+                        alt="About us"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/about" class="banners-grid__item-title">About us</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2Fib3V0L2ZlYXR1cmUtYmFubmVyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2Fib3V0L2ZlYXR1cmUtYmFubmVyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2Fib3V0L2ZlYXR1cmUtYmFubmVyLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2Fib3V0L2ZlYXR1cmUtYmFubmVyLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/about/feature-banner.jpg"
+                        width="2560"
+                        height="1024"
+                        alt="Innovations"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/innovations" class="banners-grid__item-title">Innovations</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTUxMjIxMzI1MS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjEwMH0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTUxMjIxMzI1MS5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjEwMH0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTUxMjIxMzI1MS5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXplU2NhbnMiOnRydWV9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTUxMjIxMzI1MS5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXplU2NhbnMiOnRydWV9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/common/shutterstock_1512213251.jpg"
+                        width="5600"
+                        height="3733"
+                        alt="People"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/people" class="banners-grid__item-title">People</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div></div>
+        </div>
+    
+                            </div>
+        </div>
+                                                </div>
+                                                                                        <div class="header__sub-nav-item" id='header-modal-other'>
+                                                    
+<div class="header__sub-nav-part">
+            <div class="header__sub-nav-title">
+                <div class="arrow-link arrow-link_sub-nav">
+            <div class="arrow-link__icon">
+                <svg class="arrow-link__icon-svg">
+                    <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+                </svg>
+            </div>
+            <a
+                href="https://denso.ae/products"
+                class="arrow-link__text">
+                Automotive products and service parts
+            </a>
+        </div>
+            </div>
+
+                            <div class="header__sub-nav-content">
+
+                            <div class="banners-grid">
+            <div class="banners-grid__inner"><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1BQy1hbmQtRW5naW5lQ29vbGluZy9hYy1lbmdpbmUtY29vbGluZy9BQy1FbmdpbmUtQ29vbGluZy0xNDQweDUxMnB4X2NvdmVyLWltYWdlXzIwMjItMDEtMjgtMTA0ODU0X3lmb2kuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1BQy1hbmQtRW5naW5lQ29vbGluZy9hYy1lbmdpbmUtY29vbGluZy9BQy1FbmdpbmUtQ29vbGluZy0xNDQweDUxMnB4X2NvdmVyLWltYWdlXzIwMjItMDEtMjgtMTA0ODU0X3lmb2kuanBnIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1BQy1hbmQtRW5naW5lQ29vbGluZy9hYy1lbmdpbmUtY29vbGluZy9BQy1FbmdpbmUtQ29vbGluZy0xNDQweDUxMnB4X2NvdmVyLWltYWdlXzIwMjItMDEtMjgtMTA0ODU0X3lmb2kuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1BQy1hbmQtRW5naW5lQ29vbGluZy9hYy1lbmdpbmUtY29vbGluZy9BQy1FbmdpbmUtQ29vbGluZy0xNDQweDUxMnB4X2NvdmVyLWltYWdlXzIwMjItMDEtMjgtMTA0ODU0X3lmb2kuanBnIiwiZWRpdHMiOnsianBlZyI6eyJxdWFsaXR5IjoxMDAsInByb2dyZXNzaXZlIjpmYWxzZSwidHJlbGxpc1F1YW50aXNhdGlvbiI6dHJ1ZSwib3ZlcnNob290RGVyaW5naW5nIjp0cnVlLCJvcHRpbWl6ZVNjYW5zIjp0cnVlfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-AC-and-EngineCooling/ac-engine-cooling/AC-Engine-Cooling-1440x512px_cover-image_2022-01-28-104854_yfoi.jpg"
+                        width="1440"
+                        height="512"
+                        alt="AC &amp; Engine Cooling"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/ac-engine-cooling" class="banners-grid__item-title">AC &amp; Engine Cooling</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ESUVTRUwtQ09NUE9ORU5UUy9EaWVzZWwtQ29tcG9uZW50cy0xNDQweDUxMnB4X2NvdmVyLWltYWdlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ESUVTRUwtQ09NUE9ORU5UUy9EaWVzZWwtQ29tcG9uZW50cy0xNDQweDUxMnB4X2NvdmVyLWltYWdlLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ESUVTRUwtQ09NUE9ORU5UUy9EaWVzZWwtQ29tcG9uZW50cy0xNDQweDUxMnB4X2NvdmVyLWltYWdlLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ESUVTRUwtQ09NUE9ORU5UUy9EaWVzZWwtQ29tcG9uZW50cy0xNDQweDUxMnB4X2NvdmVyLWltYWdlLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-DIESEL-COMPONENTS/Diesel-Components-1440x512px_cover-image.jpg"
+                        width="1440"
+                        height="512"
+                        alt="Diesel Components"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/diesel-components" class="banners-grid__item-title">Diesel Components</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1FTkdJTkUtTUFOQUdFTUVOVC9FbmdpbmUtTWFuYWdlbWVudC1TeXN0ZW1zLXNtYWxsLWJhbm5lci5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjEwMH0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1FTkdJTkUtTUFOQUdFTUVOVC9FbmdpbmUtTWFuYWdlbWVudC1TeXN0ZW1zLXNtYWxsLWJhbm5lci5qcGciLCJlZGl0cyI6eyJ3ZWJwIjp7InF1YWxpdHkiOjEwMH0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1FTkdJTkUtTUFOQUdFTUVOVC9FbmdpbmUtTWFuYWdlbWVudC1TeXN0ZW1zLXNtYWxsLWJhbm5lci5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXplU2NhbnMiOnRydWV9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1FTkdJTkUtTUFOQUdFTUVOVC9FbmdpbmUtTWFuYWdlbWVudC1TeXN0ZW1zLXNtYWxsLWJhbm5lci5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlLCJ0cmVsbGlzUXVhbnRpc2F0aW9uIjp0cnVlLCJvdmVyc2hvb3REZXJpbmdpbmciOnRydWUsIm9wdGltaXplU2NhbnMiOnRydWV9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-ENGINE-MANAGEMENT/Engine-Management-Systems-small-banner.jpg"
+                        width="1440"
+                        height="512"
+                        alt="Engine Management Systems"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/engine-management-systems" class="banners-grid__item-title">Engine Management Systems</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL2ZpbHRyYXRpb24vRGVuc28tZmlsdGVyXzIwMjUtMTItMTUtMTAwNDA4X2hvemIucG5nIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjM2MCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL2ZpbHRyYXRpb24vRGVuc28tZmlsdGVyXzIwMjUtMTItMTUtMTAwNDA4X2hvemIucG5nIiwiZWRpdHMiOnsid2VicCI6eyJxdWFsaXR5IjoxMDB9LCJyZXNpemUiOnsid2lkdGgiOjcyMCwiZml0IjoiY292ZXIifSwic2hhcnBlbiI6dHJ1ZX19 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL2ZpbHRyYXRpb24vRGVuc28tZmlsdGVyXzIwMjUtMTItMTUtMTAwNDA4X2hvemIucG5nIiwiZWRpdHMiOnsicG5nIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL2ZpbHRyYXRpb24vRGVuc28tZmlsdGVyXzIwMjUtMTItMTUtMTAwNDA4X2hvemIucG5nIiwiZWRpdHMiOnsicG5nIjp7InF1YWxpdHkiOjEwMCwicHJvZ3Jlc3NpdmUiOmZhbHNlfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/filtration/Denso-filter_2025-12-15-100408_hozb.png"
+                        width="1440"
+                        height="512"
+                        alt="Filtration"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/filtration" class="banners-grid__item-title">Filtration</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1JR05JVElPTi9JZ25pdGlvbi1WMV8yMDIyLTAxLTIwLTE1MjkzMV9peWZyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1JR05JVElPTi9JZ25pdGlvbi1WMV8yMDIyLTAxLTIwLTE1MjkzMV9peWZyLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1JR05JVElPTi9JZ25pdGlvbi1WMV8yMDIyLTAxLTIwLTE1MjkzMV9peWZyLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1JR05JVElPTi9JZ25pdGlvbi1WMV8yMDIyLTAxLTIwLTE1MjkzMV9peWZyLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-IGNITION/Ignition-V1_2022-01-20-152931_iyfr.jpg"
+                        width="1440"
+                        height="512"
+                        alt="Ignition"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/ignition" class="banners-grid__item-title">Ignition</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ST1RBVElORy9hbHRlcm5hdG9yL1JvdGF0aW5nLUVsZWN0cmljcy1WMV8yMDIyLTAxLTI3LTExMzA1MV9mcmR1LmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ST1RBVElORy9hbHRlcm5hdG9yL1JvdGF0aW5nLUVsZWN0cmljcy1WMV8yMDIyLTAxLTI3LTExMzA1MV9mcmR1LmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ST1RBVElORy9hbHRlcm5hdG9yL1JvdGF0aW5nLUVsZWN0cmljcy1WMV8yMDIyLTAxLTI3LTExMzA1MV9mcmR1LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1ST1RBVElORy9hbHRlcm5hdG9yL1JvdGF0aW5nLUVsZWN0cmljcy1WMV8yMDIyLTAxLTI3LTExMzA1MV9mcmR1LmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-ROTATING/alternator/Rotating-Electrics-V1_2022-01-27-113051_frdu.jpg"
+                        width="1440"
+                        height="512"
+                        alt="Rotating Electrics"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/rotating-electrics" class="banners-grid__item-title">Rotating Electrics</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div><div class="banners-grid__item"><picture
+            class="banners-grid__item-media"
+            aria-hidden="true"
+        ><source
+                        type="image/webp"
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1XaXBlci1CbGFkZXMvV2lwZXItQmxhZGVzLVYxLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjozNjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1XaXBlci1CbGFkZXMvV2lwZXItQmxhZGVzLVYxLmpwZyIsImVkaXRzIjp7IndlYnAiOnsicXVhbGl0eSI6MTAwfSwicmVzaXplIjp7IndpZHRoIjo3MjAsImZpdCI6ImNvdmVyIn0sInNoYXJwZW4iOnRydWV9fQ== 2x
+                        "
+                    >
+                    <source
+                        srcset="https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1XaXBlci1CbGFkZXMvV2lwZXItQmxhZGVzLVYxLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MzYwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 1x,
+                            https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL3Byb2R1Y3RzL0FsbC1XaXBlci1CbGFkZXMvV2lwZXItQmxhZGVzLVYxLmpwZyIsImVkaXRzIjp7ImpwZWciOnsicXVhbGl0eSI6MTAwLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6NzIwLCJmaXQiOiJjb3ZlciJ9LCJzaGFycGVuIjp0cnVlfX0= 2x
+                        "
+                    >
+                    <img
+                        src="https://assets.denso.ae/production/products/All-Wiper-Blades/Wiper-Blades-V1.jpg"
+                        width="1440"
+                        height="512"
+                        alt="Wiper Blades"
+                        loading="lazy"
+                        decoding="async"
+                        class="banners-grid__item-media-img"
+                    /></picture>
+
+        <div class="banners-grid__item-content">
+            <a href="https://denso.ae/products/wiper-blades" class="banners-grid__item-title">Wiper Blades</a>
+            <div class="banners-grid__item-arrow" aria-hidden="true"><svg class="banners-grid__item-arrow-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></div>
+        </div>
+    </div></div>
+        </div>
+    
+
+                </div>
+                    </div>
+    <div class="header__sub-nav-part">
+            <div class="header__sub-nav-title">Other products</div>
+
+            <div class="header__sub-nav-content">                                        
+                                                                            
+                                    
+                            </div>
+        </div>
+                                                </div>
+                                                                            </div>
+                                </div>
+                            </div>
+                        </nav>
+                
+                                                                                                                                        
+                        
+                                                    
+                                                                                                                                    
+                                                                                                                                            
+                                                                                                                        
+                                                                                                                                                
+                        
+                                                    
+                                                                                                                                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                        
+                                                    
+                                                                                                                                    
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                                            
+                                                                                                                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                                                                                                            
+                                                    
+                                                                                                                                    
+                                                                                                                                            
+                                                                                                                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                        
+                        
+                                                                                                                                                
+                        
+                        
+                                                            
+                <div
+                    id="denso-mobile-menu"
+                    class="header__toggle-menu"
+                    data-mmenu="[{&quot;id&quot;:&quot;mmenu-item-1&quot;,&quot;title&quot;:&quot;&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[{&quot;title&quot;:&quot;Downloads&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/downloads&quot;},{&quot;title&quot;:&quot;Digital Marketing&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/social-media-library&quot;}]},{&quot;id&quot;:&quot;mmenu-item-2&quot;,&quot;title&quot;:&quot;&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[{&quot;title&quot;:&quot;News&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/news&quot;},{&quot;title&quot;:&quot;Product updates&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/product-updates&quot;},{&quot;title&quot;:&quot;Events&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/events&quot;}]},{&quot;id&quot;:&quot;mmenu-item-3&quot;,&quot;title&quot;:&quot;&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-4&quot;,&quot;title&quot;:&quot;&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-5&quot;,&quot;title&quot;:&quot;&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-6&quot;,&quot;title&quot;:&quot;About Us&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[{&quot;title&quot;:&quot;About us&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/about&quot;},{&quot;title&quot;:&quot;Innovations&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/innovations&quot;},{&quot;title&quot;:&quot;People&quot;,&quot;url&quot;:&quot;https:\/\/denso.ae\/people&quot;}]},{&quot;id&quot;:&quot;mmenu-item-7&quot;,&quot;title&quot;:&quot;Find My Part&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-8&quot;,&quot;title&quot;:&quot;Products&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[{&quot;title&quot;:&quot;AC &amp; Engine Cooling&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Diesel Components&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Engine Management Systems&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Filtration&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Ignition&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Rotating Electrics&quot;,&quot;url&quot;:null},{&quot;title&quot;:&quot;Wiper Blades&quot;,&quot;url&quot;:null}]},{&quot;id&quot;:&quot;mmenu-item-9&quot;,&quot;title&quot;:&quot;Services&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-10&quot;,&quot;title&quot;:&quot;Where to buy and repair&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]},{&quot;id&quot;:&quot;mmenu-item-11&quot;,&quot;title&quot;:&quot;Contact Us&quot;,&quot;isFMP&quot;:false,&quot;url&quot;:null,&quot;items&quot;:[]}]"
+                >
+                    <button class="header__toggle-menu-btn" type="button">
+                        <span class="header__toggle-menu-text">Menu</span>
+                        <span class="header__toggle-menu-lines"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <div class="error-page">
+        <div class="wrapper">
+            <div class="error-page__inner">
+                                    <svg class="error-page__icon" width="48" height="48" viewBox="0 0 48 48">
+                        <path d="M5.268 35.836a3.53 3.53 0 002.402 2.582L8.03 40H8v4h32v-4H13.366a1.674 1.674 0 00-.014-.556l-.392-1.726 20.714-4.712.392 1.726a1.772 1.772 0 002.12 1.334l1.726-.394a1.77 1.77 0 001.334-2.12l-.502-2.206a3.525 3.525 0 001.05-3.366l-1.18-5.18a3.52 3.52 0 00-2.524-2.614l-4.098-6.756a5.55 5.55 0 00-5.964-2.526l-15.736 3.58a5.537 5.537 0 00-4.288 4.86l-.774 7.864a3.519 3.519 0 00-1.14 3.448l1.178 5.18zm6.04-1.376a2.656 2.656 0 01-1.18-5.178 2.656 2.656 0 011.18 5.178zm22.444-5.104a2.657 2.657 0 11-1.409-5.124 2.657 2.657 0 011.409 5.124zM11.178 18.384l15.738-3.582a1.546 1.546 0 011.66.702l3.17 5.226-1.132.258-20.092 4.574-1.136.258.598-6.084a1.545 1.545 0 011.194-1.352zM36.81 8L34 4l-1 6 5 8 6 2-4-5.078 4-1.866-4-1.866L44 4l-7.19 4z"/>
+                    </svg>
+                
+                <h1 class="heading">Error 404</h1><div class="error-page__text">
+                        <div class="text-content">
+                            <div class="text-content__subtitle">The page you were looking for was moved or does not exist.</div>
+                        </div>
+                    </div><div class="error-page__back">
+                    <div class="arrow-link">
+            <div class="arrow-link__icon">
+                <svg class="arrow-link__icon-svg">
+                    <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+                </svg>
+            </div>
+            <a
+                href="/"
+                class="arrow-link__text">
+                Back to homepage
+            </a>
+        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="back-to-top">
+    <a
+        href="#"
+        class="back-to-top__btn"
+        title="Back to top"
+    ><svg class="back-to-top__btn-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#right-arrow" />
+        </svg></a>
+</div>
+<footer class="footer">
+    <div class="wrapper">
+                <nav class="footer__menu">
+                        <div class="footer__menu-block">
+                                    <h4 class="footer__menu-block-title">Company</h4>
+                
+                                    <ul class="footer__menu-block-list">
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/about" target="" class="footer__link">About us</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/people" target="" class="footer__link">People</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/innovations" target="" class="footer__link">History</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/contacts" target="" class="footer__link">Contacts</a>
+                            </li>
+                                            </ul>
+                            </div>
+                        <div class="footer__menu-block">
+                                    <h4 class="footer__menu-block-title">Products and Services</h4>
+                
+                                    <ul class="footer__menu-block-list">
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/products" target="" class="footer__link">Aftermarket products</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/services" target="" class="footer__link">Aftermarket services</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/other/residential-co2-heat-pump" target="" class="footer__link">CO2 Heat Pump</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/products/ignition/co-generation-spark-plugs" target="" class="footer__link">CoGeneration Spark Plugs</a>
+                            </li>
+                                            </ul>
+                            </div>
+                        <div class="footer__menu-block">
+                                    <h4 class="footer__menu-block-title">Customer service</h4>
+                
+                                    <ul class="footer__menu-block-list">
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/where-to-buy" target="" class="footer__link">Where to buy</a>
+                            </li>
+                                                                                                                                                                    <li class="footer__menu-block-item">
+                                <a href="https://denso.ae/downloads" target="" class="footer__link">Downloads</a>
+                            </li>
+                                            </ul>
+                            </div>
+                    </nav>
+        
+        <div class="footer__connect">
+            <div class="footer__connect-block">
+                                                                                                                                                                                                                                                                    <h4 class="footer__connect-block-title">Contact information</h4>
+                <ul class="footer__connect-block-list">
+                                            <li class="footer__connect-block-item">
+                            <a href="/cdn-cgi/l/email-protection#ca" class="footer__link"></a>
+                        </li>
+                        <li class="footer__connect-block-item">
+                            <a href="tel:+971 (0) 4 889 7789" class="footer__link">+971 (0) 4 889 7789</a>
+                        </li>
+                                            <li class="footer__connect-block-item">
+                            <a href="/cdn-cgi/l/email-protection#93" class="footer__link"></a>
+                        </li>
+                        <li class="footer__connect-block-item">
+                            <a href="tel:" class="footer__link"></a>
+                        </li>
+                                    </ul>
+                            </div>
+            <div class="footer__connect-block">
+                                                                                                                                                                        <h4 class="footer__connect-block-title">Address</h4>
+                    <ul class="footer__connect-block-list">
+                                                    <li class="footer__connect-block-item">
+                                P.O. Box 261986 – S3B3SR03
+Jebel Ali Free Zone South –
+Dubai – UAE
+                            </li>
+                                            </ul>
+                            </div>
+                            <div class="footer__connect-social">
+                    <ul class="footer__connect-social-list">
+                                                    <li class="footer__connect-social-item">
+                                <a
+                                    href="https://www.facebook.com/DENSO.MENA.official"
+                                    class="footer__connect-social-link"
+                                    title="Facebook DENSO MENA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                ><svg class="footer__connect-social-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#social-fb" />
+        </svg></a>
+                            </li>
+                                                    <li class="footer__connect-social-item">
+                                <a
+                                    href="https://www.instagram.com/densomena/"
+                                    class="footer__connect-social-link"
+                                    title="Instagram DENSO MENA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                ><svg class="footer__connect-social-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#social-instagram" />
+        </svg></a>
+                            </li>
+                                                    <li class="footer__connect-social-item">
+                                <a
+                                    href="https://linkedin.com/company/densomena"
+                                    class="footer__connect-social-link"
+                                    title="LinkedIn DENSO MENA "
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                ><svg class="footer__connect-social-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#social-li" />
+        </svg></a>
+                            </li>
+                                                    <li class="footer__connect-social-item">
+                                <a
+                                    href="https://twitter.com/DENSO_MENA"
+                                    class="footer__connect-social-link"
+                                    title="Twitter DENSO MENA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                ><svg class="footer__connect-social-svg">
+            <use xlink:href="/dist/images/denso-sprite.svg#social-twitter" />
+        </svg></a>
+                            </li>
+                                            </ul>
+                </div>
+                    </div><nav class="footer__categories">
+                <ul class="footer__categories-list"><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/ac-engine-cooling" class="footer__link">AC &amp; Engine Cooling</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/diesel-components" class="footer__link">Diesel Components</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/engine-management-systems" class="footer__link">Engine Management Systems</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/filtration" class="footer__link">Filtration</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/ignition" class="footer__link">Ignition</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/other" class="footer__link">Other</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/rotating-electrics" class="footer__link">Rotating Electrics</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/social-media-content" class="footer__link">Social Media Content</a>
+                        </li><li class="footer__categories-item">
+                            <a href="https://denso.ae/products/wiper-blades" class="footer__link">Wiper Blades</a>
+                        </li></ul>
+            </nav><div class="footer__meta">
+            <div class="footer__meta-item">&copy; DENSO MENA 2026 All Rights Reserved</div>
+
+            
+                                                <div class="footer__meta-item">
+                        <a href="https://denso.ae/cookie-privacy-policy" class="footer__meta-link">Cookie &amp; Privacy Policy</a>
+                    </div>
+                                    <div class="footer__meta-item">
+                        <a href="https://denso.ae/terms-conditions" class="footer__meta-link">Terms &amp; Conditions</a>
+                    </div>
+                            
+            <div class="footer__meta-item">
+                <a href="https://yournextagency.com/" target="_blank" class="footer__meta-link">Website by Your Next Agency</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","author":{"@id":"#identity"},"copyrightHolder":{"@id":"#identity"},"creator":{"@id":"https://yournextagency.com/#creator"},"description":"DENSO Aftermarket and Industrial Solutions includes several business domains spanning a range of industries beyond automotive parts.","image":{"@type":"ImageObject","url":"https://assets.denso.ae/eyJidWNrZXQiOiJhc3NldHMuZGVuc28uYWUiLCJrZXkiOiJwcm9kdWN0aW9uL2NvbW1vbi9zaHV0dGVyc3RvY2tfMTcwODM4ODY3Ny5qcGciLCJlZGl0cyI6eyJqcGVnIjp7InF1YWxpdHkiOjgyLCJwcm9ncmVzc2l2ZSI6ZmFsc2UsInRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pemVTY2FucyI6dHJ1ZX0sInJlc2l6ZSI6eyJ3aWR0aCI6MTIwMCwiaGVpZ2h0Ijo2MzAsImZpdCI6ImNvdmVyIn19fQ==?mtime=1665141408"},"name":"Error 404"},{"@id":"#identity","@type":"LocalBusiness","address":{"@type":"PostalAddress","addressCountry":"United Arab Emirates","addressRegion":"Dubai","postalCode":"000","streetAddress":"P.O. Box 261986 - S3B3SR03"},"alternateName":"DENSO MENA","description":"DENSO SALES MIDDLE EAST & NORTH AFRICA FZE (DSMN) was formed in November 2010 in Dubai, United Arab Emirates. This company is expanding the aftermarket sales and service to the Middle East and North Africa.","duns":"DENSO Sales Middle East & North Africa FZE","email":"ap_dsmn_enquiry@ap.denso.com","founder":"DENSO Sales Middle East & North Africa FZE","foundingDate":"DENSO Sales Middle East & North Africa FZE","foundingLocation":"DENSO Sales Middle East & North Africa FZE","name":"DENSO Sales Middle East & North Africa","priceRange":"$","telephone":"+971-048807789"},{"@id":"https://yournextagency.com/#creator","@type":"LocalBusiness","alternateName":"YNA","description":"We create websites, mobile applications and business software that people love to use. Specialized in conversion optimization & E-commerce.","email":"hello@yournextagency.com","image":{"@type":"ImageObject","height":"64","url":"https://assets.denso-am.eu/production/common/logo.png","width":"116"},"name":"Your Next Agency","priceRange":"$","telephone":"+31202117146","url":"https://yournextagency.com/"}]}</script><script src="https://denso.ae/dist/assets/polyfills-legacy-Bwo0ItLP.js" nomodule onload="e=new CustomEvent(&#039;vite-script-loaded&#039;, {detail:{path: &#039;vite/legacy-polyfills-legacy&#039;}});document.dispatchEvent(e);"></script>
+<script type="module" src="https://denso.ae/dist/assets/app-CoSLMXmu.js" crossorigin onload="e=new CustomEvent(&#039;vite-script-loaded&#039;, {detail:{path: &#039;src/scripts/main.ts&#039;}});document.dispatchEvent(e);"></script>
+<script src="https://denso.ae/dist/assets/app-legacy-hzXbYjFQ.js" nomodule onload="e=new CustomEvent(&#039;vite-script-loaded&#039;, {detail:{path: &#039;src/scripts/main-legacy.ts&#039;}});document.dispatchEvent(e);"></script></body>
+</html>

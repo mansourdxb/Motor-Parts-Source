@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import wiperImg from "@assets/wiper-blades.jpg";
+import wiperImg from "@assets/denso-wiper-cat.jpg";
 
 const wiperProducts = [
   {
