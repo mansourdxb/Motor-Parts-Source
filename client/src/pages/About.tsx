@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -45,6 +46,11 @@ const values = [
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col" data-testid="page-about">
+      <SEO 
+        title="About Us"
+        description="Learn about Motor Parts Source L.L.C - your trusted auto parts supplier in UAE. Over 10 years of experience, 50K+ parts, serving 5000+ customers with 24/7 support."
+        keywords="about motor parts source, UAE auto parts company, car parts Sharjah"
+      />
       <Header />
       <main className="flex-1">
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-20 lg:py-28">

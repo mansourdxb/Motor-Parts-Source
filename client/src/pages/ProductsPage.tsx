@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -173,6 +174,11 @@ function ProductCard({ product }: { product: Product }) {
 export default function ProductsPage() {
   return (
     <div className="min-h-screen flex flex-col" data-testid="page-products">
+      <SEO 
+        title="Auto Parts Catalog"
+        description="Browse our extensive collection of OEM and aftermarket auto parts. Engine parts, brakes, suspension, electrical and more for all vehicle makes."
+        keywords="buy auto parts UAE, engine parts, brake pads, car battery, suspension kit"
+      />
       <Header />
       <main className="flex-1">
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-16 lg:py-20">

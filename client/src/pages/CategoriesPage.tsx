@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -58,6 +59,11 @@ const categories = [
 export default function CategoriesPage() {
   return (
     <div className="min-h-screen flex flex-col" data-testid="page-categories">
+      <SEO 
+        title="Parts Categories"
+        description="Browse auto parts by category. Find engine parts, brake systems, suspension, electrical components, transmission parts and more at Motor Parts Source."
+        keywords="auto parts categories, engine parts, brake parts, suspension parts, electrical parts"
+      />
       <Header />
       <main className="flex-1">
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-16 lg:py-20">

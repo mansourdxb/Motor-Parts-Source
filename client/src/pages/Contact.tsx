@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { SEO } from "@/components/SEO";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -68,6 +69,11 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen flex flex-col" data-testid="page-contact">
+      <SEO 
+        title="Contact Us"
+        description="Contact Motor Parts Source L.L.C for auto parts inquiries. Located in Sharjah, UAE. Call +971 56 672 9291 or WhatsApp for quick response."
+        keywords="contact motor parts source, auto parts Sharjah, car parts UAE phone"
+      />
       <Header />
       <main className="flex-1">
         <section className="bg-gradient-to-r from-primary to-primary/80 text-primary-foreground py-20 lg:py-28">
