@@ -3,10 +3,8 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import engineParts from "@assets/image_1769588682016.png";
-import brakeParts from "@assets/brake-parts.jpg";
-import suspensionParts from "@assets/suspension-parts.jpg";
+import acCooling from "@assets/image_1769588682016.png";
 import airFilters from "@assets/image_1769589414485.png";
-import transmissionParts from "@assets/transmission-parts.jpg";
 import sparkPlugs from "@assets/image_1769588542997.png";
 import injectors from "@assets/image_1769588597393.png";
 
@@ -31,9 +29,9 @@ const categories = [
   },
   {
     id: "4",
-    name: "Brake Systems",
-    image: brakeParts,
-    description: "Brake pads, discs, calipers, and rotors",
+    name: "AC & Engine Cooling",
+    image: acCooling,
+    description: "A/C compressors, condensers, fans & radiators",
   },
   {
     id: "5",

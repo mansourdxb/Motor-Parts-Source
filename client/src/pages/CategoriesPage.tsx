@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import engineParts from "@assets/image_1769588682016.png";
 import brakeParts from "@assets/brake-parts.jpg";
-import suspensionParts from "@assets/suspension-parts.jpg";
+import acCooling from "@assets/image_1769588682016.png";
 import airFilters from "@assets/image_1769589414485.png";
 import transmissionParts from "@assets/transmission-parts.jpg";
 import heroBg from "@assets/hero-bg.jpg";
@@ -44,10 +44,10 @@ const categories = [
   },
   {
     id: "5",
-    name: "Suspension",
-    image: suspensionParts,
-    description: "Quality shock absorbers, struts, control arms, and suspension kits for smooth rides.",
-    count: 720,
+    name: "AC & Engine Cooling",
+    image: acCooling,
+    description: "A/C compressors, condensers, cooling fans, radiators, evaporators, and thermal components.",
+    count: 1450,
   },
   {
     id: "6",
@@ -69,6 +69,83 @@ const categories = [
     image: heroBg,
     description: "Bumpers, fenders, mirrors, headlights, and other exterior body components.",
     count: 980,
+  },
+  {
+    id: "9",
+    name: "A/C Condensers",
+    image: acCooling,
+    description: "High-quality Denso A/C condensers for efficient heat exchange and cooling performance.",
+    count: 280,
+  },
+  {
+    id: "10",
+    name: "AC Compressors",
+    image: acCooling,
+    description: "Denso A/C compressors - the heart of your vehicle's air conditioning system.",
+    count: 420,
+  },
+  {
+    id: "11",
+    name: "AC Compressor Oil",
+    image: acCooling,
+    description: "Premium Denso compressor oils for optimal A/C system lubrication and performance.",
+    count: 45,
+  },
+  {
+    id: "12",
+    name: "Cabin Blower Fans",
+    image: acCooling,
+    description: "Denso cabin blower fans for effective air circulation and climate control.",
+    count: 180,
+  },
+  {
+    id: "13",
+    name: "Cooling Fans",
+    image: acCooling,
+    description: "Engine cooling fans from Denso for reliable temperature management.",
+    count: 320,
+  },
+  {
+    id: "14",
+    name: "Cooling Radiators",
+    image: acCooling,
+    description: "Denso radiators engineered for superior heat dissipation and engine cooling.",
+    count: 380,
+  },
+  {
+    id: "15",
+    name: "Evaporators",
+    image: acCooling,
+    description: "Super-slim Denso evaporators for efficient cabin cooling.",
+    count: 210,
+  },
+  {
+    id: "16",
+    name: "Expansion Valves",
+    image: acCooling,
+    description: "Precision Denso expansion valves for accurate refrigerant flow control.",
+    count: 150,
+  },
+  {
+    id: "17",
+    name: "Heater Cores",
+    image: acCooling,
+    description: "Denso heater cores for reliable cabin heating in cold conditions.",
+    count: 165,
+  },
+  {
+    id: "18",
+    name: "Pressure Switches & Sensors",
+    image: acCooling,
+    description: "Denso A/C pressure switches and sensors for system monitoring and protection.",
+    count: 95,
+  },
+  {
+    id: "19",
+    name: "Receiver Driers",
+    image: acCooling,
+    description: "Denso receiver driers to remove moisture and contaminants from A/C systems.",
+    count: 120,
   },
 ];
 
