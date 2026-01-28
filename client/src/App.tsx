@@ -10,6 +10,7 @@ import About from "@/pages/About";
 import Contact from "@/pages/Contact";
 import ProductsPage from "@/pages/ProductsPage";
 import CategoriesPage from "@/pages/CategoriesPage";
+import ACEngineCoolingPage from "@/pages/ACEngineCoolingPage";
 
 function Router() {
   return (
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/products" component={ProductsPage} />
       <Route path="/categories" component={CategoriesPage} />
+      <Route path="/categories/ac-engine-cooling" component={ACEngineCoolingPage} />
       <Route component={NotFound} />
     </Switch>
   );
