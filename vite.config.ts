@@ -19,7 +19,8 @@ export default defineConfig({
         ]
       : []),
   ],
-base: "/",
+base: "/Motor-Parts-Source/",
+
 
   resolve: {
     alias: {
