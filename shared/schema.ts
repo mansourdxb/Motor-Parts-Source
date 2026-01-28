@@ -43,6 +43,16 @@ export interface Brand {
   logo: string;
 }
 
+export const contactSubmissions = pgTable("contact_submissions", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  name: text("name").notNull(),
+  email: text("email").notNull(),
+  phone: text("phone").notNull(),
+  subject: text("subject").notNull(),
+  message: text("message").notNull(),
+  submittedAt: timestamp("submitted_at").defaultNow().notNull(),
+});
+
 export interface ContactFormData {
   name: string;
   email: string;
@@ -60,6 +70,8 @@ export const contactFormSchema = z.object({
 });
 
 export type ContactFormInput = z.infer<typeof contactFormSchema>;
+export type ContactSubmission = typeof contactSubmissions.$inferSelect;
+export type InsertContactSubmission = typeof contactSubmissions.$inferInsert;
 
 export interface Feature {
   icon: string;

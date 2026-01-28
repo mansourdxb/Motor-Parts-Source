@@ -30,7 +30,14 @@ Preferred communication style: Simple, everyday language.
 - **ORM**: Drizzle ORM with PostgreSQL dialect
 - **Schema Location**: `shared/schema.ts` (shared between client and server)
 - **Validation**: Zod schemas generated from Drizzle schema via drizzle-zod
-- **Current Storage**: In-memory storage implementation (database-ready structure)
+- **Database**: PostgreSQL for contact form submissions (table: `contact_submissions`)
+- **Storage**: Hybrid approach - products/categories in memory, contact submissions in database
+
+### Contact Form System
+- Contact form submissions are saved permanently to PostgreSQL database
+- Table: `contact_submissions` with fields: id, name, email, phone, subject, message, submitted_at
+- Email notifications: Not configured (user declined Resend integration)
+- To add email notifications later: Set up Resend or SendGrid integration
 
 ### Project Structure
 ```

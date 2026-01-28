@@ -1,5 +1,6 @@
-import { type User, type InsertUser, type Product, type Category, type ContactFormData } from "@shared/schema";
+import { type User, type InsertUser, type Product, type Category, type ContactFormData, contactSubmissions } from "@shared/schema";
 import { randomUUID } from "crypto";
+import { db } from "./db";
 
 export interface IStorage {
   getUser(id: string): Promise<User | undefined>;
@@ -186,11 +187,16 @@ export class MemStorage implements IStorage {
   }
 
   async submitContactForm(data: ContactFormData): Promise<{ id: string; submittedAt: Date }> {
-    const id = randomUUID();
-    const submittedAt = new Date();
-    this.contactSubmissions.set(id, { ...data, id, submittedAt });
-    console.log("Contact form submission:", { id, ...data, submittedAt });
-    return { id, submittedAt };
+    const [result] = await db.insert(contactSubmissions).values({
+      name: data.name,
+      email: data.email,
+      phone: data.phone,
+      subject: data.subject,
+      message: data.message,
+    }).returning({ id: contactSubmissions.id, submittedAt: contactSubmissions.submittedAt });
+    
+    console.log("Contact form saved to database:", { id: result.id, ...data, submittedAt: result.submittedAt });
+    return { id: result.id, submittedAt: result.submittedAt };
   }
 }
 
