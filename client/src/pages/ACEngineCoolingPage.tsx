@@ -21,6 +21,7 @@ const acCategories = [
   {
     id: "1",
     name: "A/C Condensers",
+    slug: "condensers",
     image: acCondenser,
     description: "High-quality Denso A/C condensers for efficient heat exchange and cooling performance.",
     count: 280,
@@ -28,6 +29,7 @@ const acCategories = [
   {
     id: "2",
     name: "AC Compressors",
+    slug: "ac-compressors",
     image: acCompressor,
     description: "Denso A/C compressors - the heart of your vehicle's air conditioning system.",
     count: 420,
@@ -35,6 +37,7 @@ const acCategories = [
   {
     id: "3",
     name: "AC Compressor Oil",
+    slug: "compressor-oil",
     image: compressorOil,
     description: "Premium Denso compressor oils for optimal A/C system lubrication and performance.",
     count: 45,
@@ -42,6 +45,7 @@ const acCategories = [
   {
     id: "4",
     name: "Cabin Blower Fans",
+    slug: "cabin-blower-fans",
     image: blowerFan,
     description: "Denso cabin blower fans for effective air circulation and climate control.",
     count: 180,
@@ -49,6 +53,7 @@ const acCategories = [
   {
     id: "5",
     name: "Cooling Fans",
+    slug: "cooling-fans",
     image: coolingFan,
     description: "Engine cooling fans from Denso for reliable temperature management.",
     count: 320,
@@ -56,6 +61,7 @@ const acCategories = [
   {
     id: "6",
     name: "Cooling Radiators",
+    slug: "cooling-radiators",
     image: radiator,
     description: "Denso radiators engineered for superior heat dissipation and engine cooling.",
     count: 380,
@@ -63,6 +69,7 @@ const acCategories = [
   {
     id: "7",
     name: "Evaporators",
+    slug: "evaporators",
     image: evaporator,
     description: "Super-slim Denso evaporators for efficient cabin cooling.",
     count: 210,
@@ -70,6 +77,7 @@ const acCategories = [
   {
     id: "8",
     name: "Expansion Valves",
+    slug: "expansion-valves",
     image: expansionValve,
     description: "Precision Denso expansion valves for accurate refrigerant flow control.",
     count: 150,
@@ -77,6 +85,7 @@ const acCategories = [
   {
     id: "9",
     name: "Heater Cores",
+    slug: "heater-cores",
     image: heaterCore,
     description: "Denso heater cores for reliable cabin heating in cold conditions.",
     count: 165,
@@ -84,6 +93,7 @@ const acCategories = [
   {
     id: "10",
     name: "Pressure Switches & Sensors",
+    slug: "pressure-switches",
     image: pressureSwitch,
     description: "Denso A/C pressure switches and sensors for system monitoring and protection.",
     count: 95,
@@ -91,6 +101,7 @@ const acCategories = [
   {
     id: "11",
     name: "Receiver Driers",
+    slug: "receiver-driers",
     image: receiverDrier,
     description: "Denso receiver driers to remove moisture and contaminants from A/C systems.",
     count: 120,
@@ -153,10 +164,12 @@ export default function ACEngineCoolingPage() {
                     <p className="text-muted-foreground text-sm mb-4">
                       {category.description}
                     </p>
-                    <Button className="w-full gap-2" data-testid={`button-browse-ac-${category.id}`}>
-                      Browse Products
-                      <ArrowRight className="h-4 w-4" />
-                    </Button>
+                    <Link href={`/categories/ac-engine-cooling/${category.slug}`}>
+                      <Button className="w-full gap-2" data-testid={`button-browse-ac-${category.id}`}>
+                        More Information
+                        <ArrowRight className="h-4 w-4" />
+                      </Button>
+                    </Link>
                   </div>
                 </Card>
               ))}
