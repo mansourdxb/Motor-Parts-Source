@@ -5,17 +5,17 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
-import acCondenser from "@/assets/ac-condenser.jpg";
-import acCompressor from "@/assets/ac-compressor.jpg";
-import compressorOil from "@/assets/compressor-oil.jpg";
-import blowerFan from "@/assets/blower-fan.jpg";
-import coolingFan from "@/assets/cooling-fan.jpg";
-import radiator from "@/assets/radiator.jpg";
-import evaporator from "@/assets/evaporator.jpg";
-import expansionValve from "@/assets/expansion-valve.jpg";
-import heaterCore from "@/assets/heater-core.jpg";
-import pressureSwitch from "@/assets/pressure-switch.jpg";
-import receiverDrier from "@/assets/receiver-drier.jpg";
+import acCondenser from "@assets/denso-condenser.jpg";
+import acCompressor from "@assets/denso-ac-compressor.png";
+import compressorOil from "@assets/denso-compressor-oil.jpg";
+import blowerFan from "@assets/denso-cabin-blower.jpg";
+import coolingFan from "@assets/denso-cooling-fan.jpg";
+import radiator from "@assets/denso-radiator.jpg";
+import evaporator from "@assets/denso-evaporator.png";
+import expansionValve from "@assets/denso-expansion-valve.jpg";
+import heaterCore from "@assets/denso-heater-core.jpg";
+import pressureSwitch from "@assets/denso-pressure-switch.jpg";
+import receiverDrier from "@assets/denso-receiver-drier.jpg";
 
 const acCategories = [
   {
